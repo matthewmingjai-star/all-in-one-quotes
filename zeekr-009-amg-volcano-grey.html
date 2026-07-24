@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尊貴客戶車輛改色服務報價單 - Zeekr 009</title>
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: #1a1d24;
+            --accent-gold: #d4af37;
+            --accent-blue: #00d2ff;
+            --text-main: #f0f2f5;
+            --text-muted: #9a9ea6;
+            --border-color: #2a2e39;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 850px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-align: right;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: var(--accent-blue);
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 10px;
+        }
+
+        /* 效果圖展示區 */
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            object-fit: cover;
+        }
+
+        /* 分析表格 */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding-left: 18px;
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* 報價方案卡片 */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .price-card {
+            background: #21252f;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .price-card.featured {
+            border: 2px solid var(--accent-gold);
+            background: #262a36;
+        }
+
+        .badge {
+            position: absolute;
+            top: -12px;
+            right: 15px;
+            background: var(--accent-gold);
+            color: #000;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .price-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+        .price {
+            font-size: 28px;
+            color: var(--accent-gold);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .price-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            font-size: 14px;
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        .price-features li::before {
+            content: "✓ ";
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
+
+        /* 積分回贈 Highlight */
+        .cashback-box {
+            background: linear-gradient(135deg, rgba(212,175,55,0.15) 0%, rgba(0,210,255,0.15) 100%);
+            border: 1px solid var(--accent-gold);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .cashback-box h3 {
+            margin: 0 0 5px 0;
+            color: var(--accent-gold);
+        }
+
+        .cashback-box p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--text-main);
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+
+        .wa-cta {
+            display: block;
+            margin: 25px auto 0 auto;
+            max-width: 320px;
+            text-align: center;
+            background: #25D366;
+            color: #000 !important;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 14px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37,211,102,0.35);
+            transition: transform 0.15s ease;
+        }
+
+        .wa-cta:hover {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 640px) {
+            .info-grid, .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .meta-info {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 頁頭 -->
+    <div class="header">
+        <div>
+            <h1>車輛專業改色貼膜報價單</h1>
+            <span style="font-size: 12px; color: var(--text-muted);">AUTO DETAILING & WRAPPING SERVICES</span>
+        </div>
+        <div class="meta-info">
+            <div>車型：<strong>Zeekr 009 (極氪)</strong></div>
+            <div>施工項目：<strong>全車轉 AMG 火山灰 (啞光)</strong></div>
+            <div>日期：2026 年 7 月</div>
+        </div>
+    </div>
+
+    <!-- 效果圖展示 -->
+    <div class="section-title">🖼️ 預計視覺效果示範</div>
+    <div class="gallery">
+        <!-- 可自行更換為實際效果圖網址 -->
+        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1000&q=80" alt="AMG火山灰效果示意圖">
+    </div>
+
+    <!-- 客戶現狀與分析 -->
+    <div class="section-title">🔍 用車習慣與技術痛點分析</div>
+    <div class="info-grid">
+        <div class="info-box">
+            <h3>⚠️ 車主關注與潛在痛點</h3>
+            <ul>
+                <li><strong>鬼面罩微細結構：</strong> 線條複雜、鍍鉻件多，傳統拉伸貼膜易起泡收縮。</li>
+                <li><strong>自己洗車 ＋ 泊室外：</strong> 啞光深色膜極易殘留奶白色頑固水漬 (Water Spots)。</li>
+                <li><strong>電門與縫隙收邊：</strong> 開關頻繁位置容易翹邊發黃。</li>
+            </ul>
+        </div>
+        <div class="info-box">
+            <h3>🛡️ 我哋嘅專業施工對策</h3>
+            <ul>
+                <li><strong>微包邊工藝：</strong> 鬼面罩及電門採用專用分段收口，杜絕起泡。</li>
+                <li><strong>抗水痕大廠塗層：</strong> 嚴選自帶防潑水塗層膜料，水珠自然流走，極易打理。</li>
+                <li><strong>鑄造級防殘膠：</strong> 3-5年後撕走零殘膠，徹底保護原廠車漆。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 報價方案 -->
+    <div class="section-title">💰 專屬定製報價方案</div>
+    <div class="pricing-grid">
+        
+        <!-- 方案 A -->
+        <div class="price-card featured">
+            <div class="badge">老闆首選推薦</div>
+            <h3>方案 A：極致完美・頂級套餐</h3>
+            <div class="price">$15,800</div>
+            <ul class="price-features">
+                <li>頂級高分子/TPU 啞光火山灰膜</li>
+                <li>自帶超強防潑水及抗腐蝕塗層</li>
+                <li>鬼面罩/電門極致拆裝與微包邊工藝</li>
+                <li>高耐候性（3-5年保證不龜裂、不褪色）</li>
+                <li>包含施工前全車深層去污及漆面平整</li>
+            </ul>
+        </div>
+
+        <!-- 方案 B -->
+        <div class="price-card">
+            <h3>方案 B：高性價比・標準套餐</h3>
+            <div class="price">$12,800</div>
+            <ul class="price-features">
+                <li>標準進口高光/啞光改色膜</li>
+                <li>大師傅手工鬼面罩/邊角防護處理</li>
+                <li>基礎抗UV及防護性能</li>
+                <li>耐用期 2-3 年</li>
+                <li>撕走保證不傷原廠車漆</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 現金積分獨家優惠 -->
+    <div class="cashback-box">
+        <h3>🎁 獨家養車福利：消費 100% 轉為現金積分！</h3>
+        <p>今次施工消費嘅每一蚊，將全數自動存入系統變成 <strong>現金積分 (1分 = $1現金)</strong>。<br>
+        積分保留下次使用，日後可直接用於 <strong>洗車美容、續車保 (汽車保險)、續牌費 (政府牌費)</strong> 直接當錢扣，實行「一蚊當一蚊用」！</p>
+    </div>
+
+    <!-- WhatsApp 聯絡按鈕 -->
+    <a class="wa-cta" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Zeekr%20009%20AMG%20%E7%81%AB%E5%B1%B1%E7%81%B0%E6%94%B9%E8%89%B2%E8%B2%BC%E8%86%9C%E5%A0%B1%E5%83%B9%E5%96%AE" target="_blank" rel="noopener">
+        💬 WhatsApp 立即聯絡預約
+    </a>
+
+    <!-- 頁腳 -->
+    <div class="footer">
+        感謝查詢！以上報價包含所有連工包料費用。如需預約施工或檢視實物色卡，歡迎隨時與我們聯絡。<br>
+        WhatsApp：<a href="https://wa.me/85295885226" style="color: var(--accent-blue); text-decoration: none;">9588 5226</a>
+    </div>
+</div>
+
+</body>
+</html>
