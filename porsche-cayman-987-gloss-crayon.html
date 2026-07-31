@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Cayman 987 專屬改色膜報價單 - Gloss Crayon</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #171a21;
+            --accent-gold: #d4af37;
+            --accent-red: #ff3b30;
+            --accent-gray: #a1a8b8;
+            --text-main: #f0f2f5;
+            --text-muted: #8e95a5;
+            --border-color: #262a36;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 820px;
+            width: 100%;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+        }
+
+        .car-banner {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .car-banner img {
+            width: 100%;
+            max-height: 420px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            object-fit: cover;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 26px;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: var(--text-muted);
+            text-align: right;
+            line-height: 1.5;
+        }
+
+        .section-title {
+            font-size: 19px;
+            color: #fff;
+            margin-top: 30px;
+            margin-bottom: 18px;
+            border-left: 5px solid var(--accent-gold);
+            padding-left: 12px;
+            font-weight: 600;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 14.5px;
+            line-height: 1.7;
+        }
+
+        .upgrade-list {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px dashed var(--accent-gold);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .upgrade-list h3 {
+            margin: 0 0 15px 0;
+            color: var(--accent-gold);
+            font-size: 17px;
+        }
+
+        .upgrade-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 14.5px;
+            color: var(--text-main);
+        }
+
+        .upgrade-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .upgrade-tag {
+            background: var(--accent-gold);
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-right: 12px;
+            white-space: nowrap;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .price-card {
+            background: #1e222c;
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 25px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .price-card.featured {
+            border: 2px solid var(--accent-gold);
+            background: #232834;
+        }
+
+        .badge {
+            position: absolute;
+            top: -14px;
+            right: 20px;
+            background: var(--accent-gold);
+            color: #000;
+            font-weight: bold;
+            font-size: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        .price-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .price {
+            font-size: 34px;
+            color: var(--accent-gold);
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .price-details {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            font-size: 14.5px;
+            color: var(--text-main);
+            line-height: 1.9;
+        }
+
+        .price-details li::before {
+            content: "✓ ";
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        .points-box {
+            background: linear-gradient(135deg, rgba(212,175,55,0.18) 0%, rgba(255,255,255,0.05) 100%);
+            border: 1px solid var(--accent-gold);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .points-box h3 {
+            margin: 0 0 8px 0;
+            color: var(--accent-gold);
+            font-size: 18px;
+        }
+
+        .points-box p {
+            margin: 0;
+            font-size: 14.5px;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .wa-cta {
+            display: block;
+            margin: 30px auto 0 auto;
+            max-width: 320px;
+            text-align: center;
+            background: #25D366;
+            color: #000 !important;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 14px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(37,211,102,0.35);
+            transition: transform 0.15s ease;
+        }
+
+        .wa-cta:hover {
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        @media (max-width: 640px) {
+            .info-grid, .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+            .meta-info {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 頂部圖片：Porsche 987 Gloss Crayon 效果示意 -->
+    <div class="car-banner">
+        <img src="images/porsche-cayman-987-gloss-crayon.jpg" alt="Porsche Cayman 987 Gloss Crayon 改色示範圖">
+    </div>
+
+    <!-- 頁頭 -->
+    <div class="header">
+        <div>
+            <h1>車輛全車改色轉色報價單</h1>
+            <span style="font-size: 13px; color: var(--text-muted);">PORSCHE DETAILING & WRAPPING SERVICES</span>
+        </div>
+        <div class="meta-info">
+            <div>車型：<strong>Porsche Cayman 987 (2008)</strong></div>
+            <div>原車顏色：<strong>深藍色 ➡️ 改為 Gloss Crayon (水泥灰/蠟筆灰)</strong></div>
+            <div>用車習慣：<strong>室內泊車、經常行高速公路</strong></div>
+        </div>
+    </div>
+
+    <!-- 分析區 -->
+    <div class="section-title">🔍 用車習慣與潛在痛點分析</div>
+    <div class="info-grid">
+        <div class="info-box">
+            <h3>⚠️ 淺色車與高速行駛痛點</h3>
+            <ul>
+                <li><strong>室內水漬顯眼：</strong> 轉為 Crayon 淺灰色後，室內停車場滴水或殘留水漬會比舊有深藍色顯眼得多。</li>
+                <li><strong>高速石仔彈花：</strong> Cayman 車頭低矮，經常行高速極易被前車碎石彈花車頭，擊穿普通薄膜。</li>
+                <li><strong>原廠漆保護：</strong> 2008 年車原廠漆珍貴，最怕日後撕膜時留低膠水漬傷漆。</li>
+            </ul>
+        </div>
+        <div class="info-box">
+            <h3>🛡️ 我哋嘅專業定制解決方案</h3>
+            <ul>
+                <li><strong>抗水痕塗層：</strong> 特別加配疏水抗污保護層，水垢不易附著，極易打理。</li>
+                <li><strong>加厚車頭防護：</strong> 加厚物料韌性，有效吸收高速公路飛石衝擊。</li>
+                <li><strong>專用安裝液施工：</strong> 隔離車漆與膜膠，確保日後撕膜零殘膠，還原完美原車漆。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 3 大定制增值項目說明 -->
+    <div class="upgrade-list">
+        <h3>💡 本次施工包含之 3 大重點防護升級：</h3>
+        <div class="upgrade-item">
+            <span class="upgrade-tag">升級 1</span>
+            <div><strong>抗水漬保護膜塗層 (+$1,000)：</strong> 專為 Crayon 灰色設計，大幅減低室內泊車水痕附著率。</div>
+        </div>
+        <div class="upgrade-item">
+            <span class="upgrade-tag">升級 2</span>
+            <div><strong>高速防護加厚物理層 (+$1,000)：</strong> 提升膜料厚度與抗衝擊力，專治高速公路「石仔彈花」。</div>
+        </div>
+        <div class="upgrade-item">
+            <span class="upgrade-tag">升級 3</span>
+            <div><strong>車漆保護專用安裝液 (+$1,000)：</strong> 施工時阻隔膠水滲入車漆微孔，保證日後撕膜不傷原廠漆。</div>
+        </div>
+    </div>
+
+    <!-- 報價方案 -->
+    <div class="section-title">💰 專屬定製改色方案</div>
+    <div class="pricing-grid">
+        
+        <!-- 方案 A -->
+        <div class="price-card featured">
+            <div class="badge">全方位無憂推薦</div>
+            <h3>方案 A：極致完美・全防護升級套餐</h3>
+            <div class="price">$15,000</div>
+            <ul class="price-details">
+                <li>頂級 Gloss Crayon 高光水泥灰改色膜</li>
+                <li><strong>已包含【抗水漬功能保護膜】</strong> (價值 $1,000)</li>
+                <li><strong>已包含【高速防護加厚物料】</strong> (價值 $1,000)</li>
+                <li><strong>已包含【專用安裝液保護原廠漆】</strong> (價值 $1,000)</li>
+                <li>全車深層去污及漆面微調平整工藝</li>
+                <li>大師傅全包邊隱形手工收邊</li>
+            </ul>
+        </div>
+
+        <!-- 方案 B -->
+        <div class="price-card">
+            <h3>方案 B：高性價比・標準改色套餐</h3>
+            <div class="price">$12,000</div>
+            <ul class="price-details">
+                <li>標準 Gloss Crayon 高光水泥灰改色膜</li>
+                <li>標準基礎耐候性與美觀效果</li>
+                <li>大師傅手工精細包邊施工</li>
+                <li>完美覆蓋原本深藍色車漆</li>
+                <li>保證撕走不傷原廠漆</li>
+                <li>*(如需加厚或抗水漬塗層可後期單項加購)*</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 現金積分福利 -->
+    <div class="points-box">
+        <h3>🎁 獨家養車福利：消費 100% 轉為現金積分！</h3>
+        <p>今次施工消費嘅每一蚊，將全數自動轉為 <strong>現金積分 (1分 = $1現金)</strong>。<br>
+        大額積分永久保留，日後可直接用於 <strong>洗車美容、續車保 (汽車保險)、續牌費 (政府牌費)</strong> 直接當錢扣，實行「一蚊當一蚊用」！</p>
+    </div>
+
+    <!-- WhatsApp 聯絡按鈕 -->
+    <a class="wa-cta" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Porsche%20Cayman%20987%20Gloss%20Crayon%20%E6%94%B9%E8%89%B2%E5%A0%B1%E5%83%B9%E5%96%AE" target="_blank" rel="noopener">
+        💬 WhatsApp 立即聯絡預約
+    </a>
+
+    <!-- 頁腳 -->
+    <div class="footer">
+        感謝查詢！保時捷 Cayman 987 經典跑車線條配上 Gloss Crayon 效果極之霸氣，歡迎預約時間前來檢視實物色卡。<br>
+        WhatsApp：<a href="https://wa.me/85295885226" style="color: var(--accent-gold); text-decoration: none;">9588 5226</a>
+    </div>
+</div>
+
+</body>
+</html>
