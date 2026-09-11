@@ -360,6 +360,14 @@
 
         .price-details li strong { font-weight: 500; color: var(--gold-bright); }
 
+        .price-details li.excluded { color: var(--muted); }
+
+        .price-details li.excluded::before {
+            content: "\2715";
+            color: #8a7b63;
+            font-weight: 500;
+        }
+
         .points-box {
             margin-top: 64px;
             border-radius: 16px;
@@ -576,7 +584,7 @@
                         <li><strong>高階雙層鍍膜防護：</strong>極高硬度鍍膜（提升黑色漆面鏡面亮度，上佳疏水性，有效減少一般水漬）</li>
                         <li><strong>新車美容整備：</strong>精細洗車、漆面增亮、玻璃去油膜</li>
                         <li><strong>標準無塵施工：</strong>細緻裁切、無痕貼合，不干擾 Autopilot 鏡頭</li>
-                        <li><del>全車 PPF 保護</del>（本方案不包含漆面 PPF 保護）</li>
+                        <li class="excluded">不包含全車 PPF 漆面保護膜（如需加購可另議）</li>
                     </ul>
                 </div>
 
