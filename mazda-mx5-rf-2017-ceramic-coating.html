@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Mazda MX-5 RF 尊貴外觀漆面修復與結晶鍍膜防護方案 ｜ ALL IN ONE 首席顧問報價</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0908;
+            --surface: #131110;
+            --card: #171411;
+            --gold: #c9a45c;
+            --gold-bright: #e8cf9a;
+            --gold-deep: #8a6d33;
+            --text: #ede7db;
+            --muted: #9d9482;
+            --line: rgba(201, 164, 92, 0.16);
+            --line-soft: rgba(237, 231, 219, 0.07);
+            --serif: "Noto Serif TC", serif;
+            --sans: "Noto Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background:
+                radial-gradient(1200px 600px at 50% -10%, rgba(201, 164, 92, 0.06), transparent 60%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0 20px 60px;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 880px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--line-soft);
+            border-radius: 20px;
+            margin-top: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        }
+
+        .inner { padding: 0 48px; }
+
+        .hero {
+            position: relative;
+            height: 460px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 62%;
+            transform: scale(1.02);
+            animation: heroDrift 14s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroDrift {
+            from { transform: scale(1.02) translateX(0); }
+            to   { transform: scale(1.08) translateX(-8px); }
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 9, 8, 0.15) 0%,
+                rgba(10, 9, 8, 0.05) 40%,
+                rgba(19, 17, 16, 0.88) 82%,
+                var(--surface) 100%
+            );
+        }
+
+        .hero-caption {
+            position: absolute;
+            left: 48px;
+            right: 48px;
+            bottom: 34px;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            font-weight: 500;
+        }
+
+        .hero-caption h1 {
+            font-family: var(--serif);
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0 0 18px;
+            line-height: 1.35;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .gold-rule {
+            width: 56px;
+            height: 2px;
+            background: linear-gradient(to right, var(--gold), transparent);
+        }
+
+        .meta-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            margin: 34px 0 0;
+        }
+
+        .meta-item {
+            background: var(--surface);
+            padding: 20px 24px;
+        }
+
+        .meta-item .label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .meta-item .value {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        section { margin-top: 64px; }
+        .section-head { margin-bottom: 28px; }
+        .section-head .eyebrow { margin-bottom: 10px; }
+
+        .section-head h2 {
+            font-family: var(--serif);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin: 0 0 16px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 14px;
+            padding: 28px;
+            transition: transform 0.35s ease, border-color 0.35s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-3px);
+            border-color: var(--line);
+        }
+
+        .info-box h3 {
+            font-family: var(--serif);
+            font-size: 16.5px;
+            letter-spacing: 1px;
+            color: var(--gold-bright);
+            margin: 0 0 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+            font-weight: 600;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .info-box li {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.85;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .info-box li:last-child { margin-bottom: 0; }
+
+        .info-box li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.85em;
+            width: 8px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .info-box li strong { color: var(--text); font-weight: 500; }
+
+        .solution-card {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 24px;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .solution-card:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .solution-card .num {
+            font-family: var(--serif);
+            font-size: 34px;
+            color: var(--gold);
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .solution-card h4 {
+            font-family: var(--serif);
+            font-size: 17px;
+            letter-spacing: 0.8px;
+            margin: 6px 0 12px;
+            color: var(--gold-bright);
+            font-weight: 600;
+        }
+
+        .solution-card p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.9;
+        }
+
+        .solution-card p strong { color: var(--text); font-weight: 500; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .price-card {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 16px;
+            padding: 34px 30px;
+            position: relative;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .price-card:hover { transform: translateY(-4px); }
+
+        .price-card.featured {
+            border: 1px solid transparent;
+            background:
+                linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(160deg, var(--gold-bright), var(--gold-deep) 60%, rgba(138, 109, 51, 0.3)) border-box;
+            box-shadow: 0 20px 50px rgba(201, 164, 92, 0.10);
+        }
+
+        .badge {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            color: #1a1408;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 6px 18px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .plan-tag {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .price-card h3 {
+            font-family: var(--serif);
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 0 0 20px;
+            font-weight: 600;
+        }
+
+        .price {
+            font-family: var(--serif);
+            font-size: 40px;
+            color: var(--gold-bright);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .price-note {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .price-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .price-details li {
+            font-size: 13.5px;
+            color: var(--text);
+            line-height: 1.75;
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 13px;
+        }
+
+        .price-details li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .price-details li strong { font-weight: 500; color: var(--gold-bright); }
+
+        .points-box {
+            margin-top: 64px;
+            border-radius: 16px;
+            padding: 40px 36px;
+            text-align: center;
+            border: 1px solid var(--line);
+            background:
+                radial-gradient(600px 200px at 50% 0%, rgba(201, 164, 92, 0.14), transparent 70%),
+                var(--card);
+        }
+
+        .points-box .eyebrow { margin-bottom: 12px; }
+
+        .points-box h3 {
+            font-family: var(--serif);
+            font-size: 21px;
+            letter-spacing: 1.5px;
+            color: var(--gold-bright);
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        .points-box p {
+            margin: 0 auto;
+            max-width: 560px;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 2;
+        }
+
+        .points-box p strong { color: var(--gold-bright); font-weight: 500; }
+
+        .wa-cta {
+            display: block;
+            margin: 44px auto 0;
+            max-width: 340px;
+            text-align: center;
+            font-family: var(--sans);
+            font-size: 15.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 16px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #072b16 !important;
+            background: linear-gradient(135deg, #4ae585, #25D366 60%, #1ba94f);
+            box-shadow: 0 14px 34px rgba(37, 211, 102, 0.22);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wa-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 42px rgba(37, 211, 102, 0.32);
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding: 28px 48px 36px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 2;
+            border-top: 1px solid var(--line-soft);
+        }
+
+        .footer .gold-rule { margin: 0 auto 20px; background: linear-gradient(to right, transparent, var(--gold), transparent); width: 120px; height: 1px; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .hero img { animation: none; }
+        }
+
+        @media (max-width: 720px) {
+            body { padding: 0 12px 40px; }
+            .container { margin-top: 16px; border-radius: 16px; }
+            .inner { padding: 0 22px; }
+            .hero { height: 300px; }
+            .hero-caption { left: 22px; right: 22px; bottom: 22px; }
+            .hero-caption h1 { font-size: 23px; }
+            .meta-bar { grid-template-columns: 1fr; }
+            .info-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .solution-card { grid-template-columns: 48px 1fr; gap: 16px; }
+            .solution-card .num { width: 48px; height: 48px; font-size: 24px; }
+            .price { font-size: 34px; }
+            section { margin-top: 48px; }
+            .footer { padding: 24px 22px 30px; }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <img src="images/mazda-mx5-rf-2017-machine-grey.jpg" alt="Mazda MX-5 RF 質感示意圖">
+        <div class="hero-caption">
+            <p class="eyebrow">TAILORED DETAILING &amp; CERAMIC COATING PROPOSAL</p>
+            <h1>MAZDA MX-5 RF<br>專業漆面還原與結晶鍍膜防護方案</h1>
+            <div class="gold-rule"></div>
+        </div>
+    </header>
+
+    <div class="inner">
+
+        <!-- 車輛資料欄 -->
+        <div class="meta-bar reveal">
+            <div class="meta-item">
+                <div class="label">車型 Model</div>
+                <div class="value"><strong>Mazda MX-5 RF 硬頂版</strong><br>2017 年款（約 9 年車齡）</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">車身顏色 Colour</div>
+                <div class="value"><strong>經典金屬灰 (Machine Grey)</strong><br>漆面含歲月氧化層及細微紋理</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">用車習慣 Usage</div>
+                <div class="value"><strong>經常停泊露天 ｜ 常用高速公路</strong><br>車主習慣自助手洗打理</div>
+            </div>
+        </div>
+
+        <!-- 01 痛點分析 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">01 · Analysis</p>
+                <h2>現況分析：露天停泊與歲月累積的漆面挑戰</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>客戶環境與核心痛點</h3>
+                    <ul>
+                        <li><strong>露天日曬水漬蝕漆：</strong>長期泊露天承受紫外線暴曬與酸雨，雨水夾雜微塵蒸發產生凸透鏡效應，礦物質附著金油層形成頑固水斑，導致灰色車漆失去通透光澤。</li>
+                        <li><strong>9 年車齡歲月痕跡：</strong>歷經多年風雨洗禮及高速迎風行駛，車頭迎風面與金油層已累積不少太陽紋、氧化白霧與微小磨損盲點。</li>
+                        <li><strong>自助手洗費時阻力大：</strong>缺乏平滑的保護層時，露天累積的油膜與灰塵黏附力強，手洗擦拭時阻力大，容易造成二次打圈刮花。</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>我哋嘅專業處置與對策</h3>
+                    <ul>
+                        <li><strong>深層淨化與多段研磨修復：</strong>深層清除鐵粉、柏油與金油層氧化物，配合專業多段鏡面拋光工藝，大幅撫平旋渦紋，還原清澈反射光澤。</li>
+                        <li><strong>高密度抗水漬結晶塗層：</strong>注入高疏水塗層體系，令雨水與污垢迅速滾落，有效減少酸雨及礦物質附著金油層的機會。</li>
+                        <li><strong>絲滑自潔與高硬度交聯結構：</strong>底層強化硬度減低微刮花，面層提供荷葉自潔效應；日常自助洗車只需清水沖洗即可帶走泥沙，大幅縮短打理時間。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 方案對比 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">02 · Solutions</p>
+                <h2>方案對比：各方案解決的核心問題</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="solution-card">
+                <div class="num">A</div>
+                <div>
+                    <h4>方案 A 解決要點｜旗艦長效雙層護理方案（Gtechniq 雙層複合系統）</h4>
+                    <p>針對<strong>經常停泊露天日曬雨淋</strong>及<strong>頻繁行駛高速公路</strong>的高度防護需求。透過「10H 硬化底漆＋EXO 超疏水抗水漬面漆」雙層複合技術，有效紓緩露天水斑侵蝕問題，強化漆面結構抗刮能力，並提供 3 年耐久保護與深層水晶鏡面質感。</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="num">B</div>
+                <div>
+                    <h4>方案 B 解決要點｜專業實用高性價比方案（CarPro Cquartz 9H 納米石英）</h4>
+                    <p>針對<strong>追求預算優選與高性價比日常防護</strong>的車主。透過深層去污結合雙段鏡面提亮拋光，撫平大部分輕微歲月細紋，並以厚塗 9H 石英結晶塗層隔絕紫外線與酸雨侵蝕，重塑金屬灰通透反光，令日常自助手洗變得輕鬆滑溜。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 報價方案 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">03 · Quotation</p>
+                <h2>專屬定製報價方案</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="pricing-grid">
+
+                <div class="price-card featured">
+                    <div class="badge">首席顧問推薦 · 露天首選</div>
+                    <div class="plan-tag">PLAN A</div>
+                    <h3>方案 A：旗艦長效雙層護理方案</h3>
+                    <div class="price">HK$ 3,800</div>
+                    <div class="price-note">適合露天停泊 ｜ 長效耐久抗水漬 ｜ 雙層系統</div>
+                    <ul class="price-details">
+                        <li><strong>漆面深層還原：</strong>全車深層鐵粉柏油脫脂 ＋ 2 至 3 段深層鏡面研磨還原拋光工藝</li>
+                        <li><strong>雙層複合體系：</strong>英國 Gtechniq 10H 高密度陶瓷硬化底層 ＋ EXO V5 抗水漬超疏水面層</li>
+                        <li><strong>全方位施工部件：</strong>全車鈑件、前後泵把、折疊硬頂模組外殼及全車燈具深層塗裝</li>
+                        <li><strong>高效抗污性能：</strong>高疏水表面，水珠自然滑落、減少積聚，有效抵抗酸鹼化學侵蝕</li>
+                        <li><strong>品質長效保障：</strong>提供 <strong>3 年耐久質保</strong>，附贈完工 6 個月後免費漆面狀態檢查與疏水層維護乙次</li>
+                    </ul>
+                </div>
+
+                <div class="price-card">
+                    <div class="plan-tag">PLAN B</div>
+                    <h3>方案 B：專業實用高性價比方案</h3>
+                    <div class="price">HK$ 2,400</div>
+                    <div class="price-note">日常基礎防護 ｜ 預算優選 ｜ 鏡面煥新</div>
+                    <ul class="price-details">
+                        <li><strong>基礎修復工藝：</strong>全車深層去污脫脂 ＋ 單段至雙段漆面鏡面提亮修復（改善大部分輕微細紋與氧化盲點）</li>
+                        <li><strong>石英防護塗層：</strong>CarPro Cquartz UK 3.0 專業級 9H 納米石英鍍膜（單層厚塗）</li>
+                        <li><strong>施工涵蓋範圍：</strong>全車主要車身鈑件、摺疊硬頂外殼及前後泵把防護</li>
+                        <li><strong>實用疏水自潔：</strong>顯著改善漆面油膜灰塵吸附，提供乾淨清爽的水潤折射光澤，大幅節省自洗時間</li>
+                        <li><strong>品質耐久保障：</strong>提供 <strong>1.5 年（18 個月）耐久質保</strong></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 積分福利 -->
+        <section class="reveal">
+            <div class="points-box">
+                <p class="eyebrow">Exclusive Privilege</p>
+                <h3>獨家養車福利：消費 100% 轉為現金積分！</h3>
+                <p>今次施工消費嘅每一蚊，將全數自動轉為 <strong>現金積分（1 分 = $1 現金）</strong>。<br>
+                大額積分永久保留，日後可直接用於 <strong>洗車美容、續車保（汽車保險）、續牌費（政府牌費）</strong> 直接當錢扣，實行「一蚊當一蚊用」！</p>
+            </div>
+        </section>
+
+        <a class="wa-cta reveal" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Mazda%20MX-5%20RF%20%E6%BC%86%E9%9D%A2%E4%BF%AE%E5%BE%A9%E5%8F%8A%E9%8D%8D%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">💬 WhatsApp 立即聯絡預約</a>
+
+    </div>
+
+    <!-- 頁腳 -->
+    <div class="footer">
+        <div class="gold-rule"></div>
+        ALL IN ONE ｜ 首席銷售顧問團隊 呈獻<br>
+        專屬尊貴服務 · 嚴選國際專業工藝 · 讓愛車重現水晶鏡面光澤<br>
+        WhatsApp：<a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Mazda%20MX-5%20RF%20%E6%BC%86%E9%9D%A2%E4%BF%AE%E5%BE%A9%E5%8F%8A%E9%8D%8D%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="color: var(--gold-bright); text-decoration: none;">9588 5226</a>
+    </div>
+
+</div>
+
+<script>
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.06) + 's';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
