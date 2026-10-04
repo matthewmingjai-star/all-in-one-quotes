@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Mercedes-Benz E200 (W213) 專屬全車連天幕隔熱方案 ｜ ALL IN ONE 首席顧問報價</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0908;
+            --surface: #131110;
+            --card: #171411;
+            --gold: #c9a45c;
+            --gold-bright: #e8cf9a;
+            --gold-deep: #8a6d33;
+            --text: #ede7db;
+            --muted: #9d9482;
+            --line: rgba(201, 164, 92, 0.16);
+            --line-soft: rgba(237, 231, 219, 0.07);
+            --serif: "Noto Serif TC", serif;
+            --sans: "Noto Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background:
+                radial-gradient(1200px 600px at 50% -10%, rgba(201, 164, 92, 0.06), transparent 60%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0 20px 60px;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 880px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--line-soft);
+            border-radius: 20px;
+            margin-top: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        }
+
+        .inner { padding: 0 48px; }
+
+        .hero {
+            position: relative;
+            height: 460px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 62%;
+            transform: scale(1.02);
+            animation: heroDrift 14s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroDrift {
+            from { transform: scale(1.02) translateX(0); }
+            to   { transform: scale(1.08) translateX(-8px); }
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 9, 8, 0.15) 0%,
+                rgba(10, 9, 8, 0.05) 40%,
+                rgba(19, 17, 16, 0.88) 82%,
+                var(--surface) 100%
+            );
+        }
+
+        .hero-caption {
+            position: absolute;
+            left: 48px;
+            right: 48px;
+            bottom: 34px;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            font-weight: 500;
+        }
+
+        .hero-caption h1 {
+            font-family: var(--serif);
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0 0 18px;
+            line-height: 1.35;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .gold-rule {
+            width: 56px;
+            height: 2px;
+            background: linear-gradient(to right, var(--gold), transparent);
+        }
+
+        .meta-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            margin: 34px 0 0;
+        }
+
+        .meta-item {
+            background: var(--surface);
+            padding: 20px 24px;
+        }
+
+        .meta-item .label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .meta-item .value {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        section { margin-top: 64px; }
+        .section-head { margin-bottom: 28px; }
+        .section-head .eyebrow { margin-bottom: 10px; }
+
+        .section-head h2 {
+            font-family: var(--serif);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin: 0 0 16px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 14px;
+            padding: 28px;
+            transition: transform 0.35s ease, border-color 0.35s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-3px);
+            border-color: var(--line);
+        }
+
+        .info-box h3 {
+            font-family: var(--serif);
+            font-size: 16.5px;
+            letter-spacing: 1px;
+            color: var(--gold-bright);
+            margin: 0 0 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+            font-weight: 600;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .info-box li {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.85;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .info-box li:last-child { margin-bottom: 0; }
+
+        .info-box li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.85em;
+            width: 8px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .info-box li strong { color: var(--text); font-weight: 500; }
+
+        .solution-card {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 24px;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .solution-card:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .solution-card .num {
+            font-family: var(--serif);
+            font-size: 34px;
+            color: var(--gold);
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .solution-card h4 {
+            font-family: var(--serif);
+            font-size: 17px;
+            letter-spacing: 0.8px;
+            margin: 6px 0 12px;
+            color: var(--gold-bright);
+            font-weight: 600;
+        }
+
+        .solution-card p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.9;
+        }
+
+        .solution-card p strong { color: var(--text); font-weight: 500; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .price-card {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 16px;
+            padding: 34px 30px;
+            position: relative;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .price-card:hover { transform: translateY(-4px); }
+
+        .price-card.featured {
+            border: 1px solid transparent;
+            background:
+                linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(160deg, var(--gold-bright), var(--gold-deep) 60%, rgba(138, 109, 51, 0.3)) border-box;
+            box-shadow: 0 20px 50px rgba(201, 164, 92, 0.10);
+        }
+
+        .badge {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            color: #1a1408;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 6px 18px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .plan-tag {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .price-card h3 {
+            font-family: var(--serif);
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 0 0 20px;
+            font-weight: 600;
+        }
+
+        .price {
+            font-family: var(--serif);
+            font-size: 40px;
+            color: var(--gold-bright);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .price-note {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .price-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .price-details li {
+            font-size: 13.5px;
+            color: var(--text);
+            line-height: 1.75;
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 13px;
+        }
+
+        .price-details li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .price-details li strong { font-weight: 500; color: var(--gold-bright); }
+
+        .points-box {
+            margin-top: 64px;
+            border-radius: 16px;
+            padding: 40px 36px;
+            text-align: center;
+            border: 1px solid var(--line);
+            background:
+                radial-gradient(600px 200px at 50% 0%, rgba(201, 164, 92, 0.14), transparent 70%),
+                var(--card);
+        }
+
+        .points-box .eyebrow { margin-bottom: 12px; }
+
+        .points-box h3 {
+            font-family: var(--serif);
+            font-size: 21px;
+            letter-spacing: 1.5px;
+            color: var(--gold-bright);
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        .points-box p {
+            margin: 0 auto;
+            max-width: 560px;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 2;
+        }
+
+        .points-box p strong { color: var(--gold-bright); font-weight: 500; }
+
+        .wa-cta {
+            display: block;
+            margin: 44px auto 0;
+            max-width: 340px;
+            text-align: center;
+            font-family: var(--sans);
+            font-size: 15.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 16px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #072b16 !important;
+            background: linear-gradient(135deg, #4ae585, #25D366 60%, #1ba94f);
+            box-shadow: 0 14px 34px rgba(37, 211, 102, 0.22);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wa-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 42px rgba(37, 211, 102, 0.32);
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding: 28px 48px 36px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 2;
+            border-top: 1px solid var(--line-soft);
+        }
+
+        .footer .gold-rule { margin: 0 auto 20px; background: linear-gradient(to right, transparent, var(--gold), transparent); width: 120px; height: 1px; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .hero img { animation: none; }
+        }
+
+        @media (max-width: 720px) {
+            body { padding: 0 12px 40px; }
+            .container { margin-top: 16px; border-radius: 16px; }
+            .inner { padding: 0 22px; }
+            .hero { height: 300px; }
+            .hero-caption { left: 22px; right: 22px; bottom: 22px; }
+            .hero-caption h1 { font-size: 23px; }
+            .meta-bar { grid-template-columns: 1fr; }
+            .info-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .solution-card { grid-template-columns: 48px 1fr; gap: 16px; }
+            .solution-card .num { width: 48px; height: 48px; font-size: 24px; }
+            .price { font-size: 34px; }
+            section { margin-top: 48px; }
+            .footer { padding: 24px 22px 30px; }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <img src="images/mercedes-e200-w213-2019-silver.jpg" alt="Mercedes-Benz E200 質感示意圖">
+        <div class="hero-caption">
+            <p class="eyebrow">TAILORED THERMAL OPTICS &amp; COMPLIANCE</p>
+            <h1>Mercedes-Benz E200 (W213)<br>全車連全景天幕 · 光學隔熱合規升級提案</h1>
+            <div class="gold-rule"></div>
+        </div>
+    </header>
+
+    <div class="inner">
+
+        <!-- 車輛資料欄 -->
+        <div class="meta-bar reveal">
+            <div class="meta-item">
+                <div class="label">車型 Model</div>
+                <div class="value"><strong>Mercedes-Benz E200 (W213)</strong><br>2019 出廠（車齡約 7 年 · 屆每年強制年檢期）</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">車身顏色 Colour</div>
+                <div class="value"><strong>銀色（Silver）</strong><br>全車包雙天窗/全景天幕覆蓋施工</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">用車習慣 Usage</div>
+                <div class="value"><strong>長期泊室外露天暴曬環境</strong><br>駕駛者佩戴眼鏡習慣 · 需高穿透抗眩光</div>
+            </div>
+        </div>
+
+        <!-- 01 痛點分析 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">01 · Analysis</p>
+                <h2>行車環境與光學痛點專業評估</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>客戶環境與核心痛點</h3>
+                    <ul>
+                        <li><strong>每年驗車拆膜風險：</strong>2019 年車已滿 6 年強制年檢期，若選用規格不符或深色金屬膜，每年驗車有機會被要求撕膜重驗，既耗財更耗時。</li>
+                        <li><strong>室外露天座艙高溫：</strong>長期泊露天環境，雙天窗/全景天幕受陽光直射如「流動焗爐」，原廠皮椅及中控儀錶容易乾裂褪色，冷氣負載沉重。</li>
+                        <li><strong>戴鏡眩光與彩虹紋：</strong>傳統含金屬隔熱紙會產生折射眩光，配戴眼鏡駕駛容易出現彩虹光斑及雙重倒影，影響夜間與雨天行車判斷。</li>
+                        <li><strong>舊膜老化除膠隱患：</strong>現有舊膜起泡退化，若後擋風玻璃除膠技術不足，容易扯斷後玻璃除霧發熱線。</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>我哋嘅專業處置與對策</h3>
+                    <ul>
+                        <li><strong>分區合規高阻熱配置：</strong>前擋風玻璃精選透光率 70% 以上光學膜，符合運輸署驗車透光要求，每年驗車免撕膜。</li>
+                        <li><strong>頂級天幕紅外線阻隔：</strong>天幕部位施貼高紅外線阻隔陶瓷膜，阻隔 99% 以上紫外線，由源頭減少車廂積熱。</li>
+                        <li><strong>光學級非金屬納米工藝：</strong>不含金屬成分，低內反光，大幅減少彩虹紋與二次倒影，不干擾 Autotoll 與 GPS 訊號。</li>
+                        <li><strong>溫控專用除膠工藝：</strong>後擋風玻璃採用無損溫控軟化除膠技術，由資深技師無刀片精細施工，盡力保護原廠發熱線完整。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 方案對比 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">02 · Solutions</p>
+                <h2>方案對比：各方案解決的核心問題</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="solution-card">
+                <div class="num">A</div>
+                <div>
+                    <h4>方案 A 解決要點｜3M™ Crystalline 光學多層膜 + Ceramic IR 尊尚組合</h4>
+                    <p><strong>專為「高效降溫」與「重視光學視野」的車主而設：</strong>前擋風玻璃選用超過 200 層多層光學薄膜 Crystalline CR70，高效阻隔紅外線，內反光低；天幕與後座側窗搭配深色納米陶瓷，大幅阻隔車頂熱力。大幅減少戴眼鏡駕駛時的眩光與彩虹紋，並提供 <strong>5 年原廠質保</strong>，前擋透光符合驗車要求。</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="num">B</div>
+                <div>
+                    <h4>方案 B 解決要點｜3M™ Ceramic IR 極黑納米陶瓷全車系列</h4>
+                    <p><strong>專為「高性價比實用」與「合規黑化私隱」而設：</strong>全車連天幕統一採用 3M™ 納米陶瓷架構，前擋 IR70 合法通透，後側窗及天幕以 IR25/IR35 強化抗曬與隱私。非金屬工藝不屏蔽電子訊號、無金屬膜彩虹光斑，阻隔 99% 以上紫外線，以實惠預算全方位防護車室皮具及降溫，配備 <strong>3 年品質保障</strong>。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 報價方案 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">03 · Quotation</p>
+                <h2>專屬定製報價方案</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="pricing-grid">
+
+                <div class="price-card featured">
+                    <div class="badge">首席顧問推薦 · 旗艦首選</div>
+                    <div class="plan-tag">PLAN A</div>
+                    <h3>方案 A：3M™ Crystalline + Ceramic IR 尊尚組合</h3>
+                    <div class="price">HK$ 4,999</div>
+                    <div class="price-note">全車連全景天幕施工 · 原廠 5 年質保</div>
+                    <ul class="price-details">
+                        <li><strong>前擋配置：</strong>3M™ Crystalline CR70（超過 200 層多層光學薄膜，高透光高阻熱）</li>
+                        <li><strong>天幕及側後擋：</strong>3M™ Ceramic IR15 / IR25（高抗 IR 陶瓷膜）</li>
+                        <li><strong>合規標準：</strong>前擋符合香港運輸署驗車透光要求，<strong>每年驗車免撕膜</strong></li>
+                        <li><strong>光學性能：</strong>純光學無金屬成分，<strong>戴眼鏡行車大幅減少彩虹紋及夜間眩光</strong></li>
+                        <li><strong>天幕強阻熱：</strong>室外露天泊車體感顯著降溫，有效紓緩天幕吸熱「焗爐感」</li>
+                        <li><strong>無損工藝：</strong>後擋風玻璃發熱線安全保護除膠作業</li>
+                        <li><strong>原廠質保：</strong>享 3M 原廠 <strong>5 年質保</strong>（防起泡、脫膠、褪色）</li>
+                    </ul>
+                </div>
+
+                <div class="price-card">
+                    <div class="plan-tag">PLAN B</div>
+                    <h3>方案 B：3M™ Ceramic IR 極黑納米陶瓷全車系列</h3>
+                    <div class="price">HK$ 4,499</div>
+                    <div class="price-note">全車連全景天幕施工 · 3 年授權品質保障</div>
+                    <ul class="price-details">
+                        <li><strong>前擋配置：</strong>3M™ Ceramic IR70（納米陶瓷高透光合規膜）</li>
+                        <li><strong>天幕及側後擋：</strong>3M™ Ceramic IR25 / IR35（深色陶瓷私隱隔熱膜）</li>
+                        <li><strong>合規標準：</strong>前排合法合規，前擋透光符合每年驗車要求</li>
+                        <li><strong>光學體驗：</strong>納米陶瓷非金屬塗層，不干擾手機、GPS 及 Autotoll 訊號</li>
+                        <li><strong>紫外線防護：</strong>全車阻隔 99% 以上紫外線，減少中控皮革老化發燙</li>
+                        <li><strong>專業除舊：</strong>包含舊膜評估及安全溫控除膠工藝</li>
+                        <li><strong>原廠認證：</strong>授權施工工藝，享 <strong>3 年品質保障</strong></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 積分福利 -->
+        <section class="reveal">
+            <div class="points-box">
+                <p class="eyebrow">Exclusive Privilege</p>
+                <h3>獨家養車福利：消費 100% 轉為現金積分！</h3>
+                <p>今次施工消費嘅每一蚊，將全數自動轉為 <strong>現金積分（1 分 = $1 現金）</strong>。<br>
+                大額積分永久保留，日後可直接用於 <strong>洗車美容、續車保（汽車保險）、續牌費（政府牌費）</strong> 直接當錢扣，實行「一蚊當一蚊用」！</p>
+            </div>
+        </section>
+
+        <a class="wa-cta reveal" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Mercedes-Benz%20E200%20%E5%85%A8%E8%BB%8A%E9%80%A3%E5%A4%A9%E5%B9%95%203M%20%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">💬 WhatsApp 立即聯絡預約</a>
+
+    </div>
+
+    <!-- 頁腳 -->
+    <div class="footer">
+        <div class="gold-rule"></div>
+        ALL IN ONE ｜ 首席銷售顧問團隊 專屬呈獻<br>
+        為閣下之 Mercedes-Benz E200 打造合規、高效降溫與低眩光之尊榮駕乘體驗。期待為您服務！<br>
+        WhatsApp：<a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Mercedes-Benz%20E200%20%E5%85%A8%E8%BB%8A%E9%80%A3%E5%A4%A9%E5%B9%95%203M%20%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="color: var(--gold-bright); text-decoration: none;">9588 5226</a>
+    </div>
+
+</div>
+
+<script>
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.06) + 's';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
