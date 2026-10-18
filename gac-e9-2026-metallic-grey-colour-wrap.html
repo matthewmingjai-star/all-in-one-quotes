@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>GAC E9 PHEV 金屬灰改色防護方案 ｜ ALL IN ONE 首席顧問報價</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0908;
+            --surface: #131110;
+            --card: #171411;
+            --gold: #c9a45c;
+            --gold-bright: #e8cf9a;
+            --gold-deep: #8a6d33;
+            --text: #ede7db;
+            --muted: #9d9482;
+            --line: rgba(201, 164, 92, 0.16);
+            --line-soft: rgba(237, 231, 219, 0.07);
+            --serif: "Noto Serif TC", serif;
+            --sans: "Noto Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background:
+                radial-gradient(1200px 600px at 50% -10%, rgba(201, 164, 92, 0.06), transparent 60%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0 20px 60px;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 880px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--line-soft);
+            border-radius: 20px;
+            margin-top: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        }
+
+        .inner { padding: 0 48px; }
+
+        .hero {
+            position: relative;
+            height: 460px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 62%;
+            transform: scale(1.02);
+            animation: heroDrift 14s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroDrift {
+            from { transform: scale(1.02) translateX(0); }
+            to   { transform: scale(1.08) translateX(-8px); }
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 9, 8, 0.15) 0%,
+                rgba(10, 9, 8, 0.05) 40%,
+                rgba(19, 17, 16, 0.88) 82%,
+                var(--surface) 100%
+            );
+        }
+
+        .hero-caption {
+            position: absolute;
+            left: 48px;
+            right: 48px;
+            bottom: 34px;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            font-weight: 500;
+        }
+
+        .hero-caption h1 {
+            font-family: var(--serif);
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0 0 18px;
+            line-height: 1.35;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .gold-rule {
+            width: 56px;
+            height: 2px;
+            background: linear-gradient(to right, var(--gold), transparent);
+        }
+
+        .meta-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            margin: 34px 0 0;
+        }
+
+        .meta-item {
+            background: var(--surface);
+            padding: 20px 24px;
+        }
+
+        .meta-item .label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .meta-item .value {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        section { margin-top: 64px; }
+        .section-head { margin-bottom: 28px; }
+        .section-head .eyebrow { margin-bottom: 10px; }
+
+        .section-head h2 {
+            font-family: var(--serif);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin: 0 0 16px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 14px;
+            padding: 28px;
+            transition: transform 0.35s ease, border-color 0.35s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-3px);
+            border-color: var(--line);
+        }
+
+        .info-box h3 {
+            font-family: var(--serif);
+            font-size: 16.5px;
+            letter-spacing: 1px;
+            color: var(--gold-bright);
+            margin: 0 0 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+            font-weight: 600;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .info-box li {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.85;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .info-box li:last-child { margin-bottom: 0; }
+
+        .info-box li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.85em;
+            width: 8px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .info-box li strong { color: var(--text); font-weight: 500; }
+
+        .solution-card {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 24px;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .solution-card:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .solution-card .num {
+            font-family: var(--serif);
+            font-size: 34px;
+            color: var(--gold);
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .solution-card h4 {
+            font-family: var(--serif);
+            font-size: 17px;
+            letter-spacing: 0.8px;
+            margin: 6px 0 12px;
+            color: var(--gold-bright);
+            font-weight: 600;
+        }
+
+        .solution-card p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.9;
+        }
+
+        .solution-card p strong { color: var(--text); font-weight: 500; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .price-card {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 16px;
+            padding: 34px 30px;
+            position: relative;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .price-card:hover { transform: translateY(-4px); }
+
+        .price-card.featured {
+            border: 1px solid transparent;
+            background:
+                linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(160deg, var(--gold-bright), var(--gold-deep) 60%, rgba(138, 109, 51, 0.3)) border-box;
+            box-shadow: 0 20px 50px rgba(201, 164, 92, 0.10);
+        }
+
+        .badge {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            color: #1a1408;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 6px 18px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .plan-tag {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .price-card h3 {
+            font-family: var(--serif);
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 0 0 20px;
+            font-weight: 600;
+        }
+
+        .price {
+            font-family: var(--serif);
+            font-size: 40px;
+            color: var(--gold-bright);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .price-note {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .price-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .price-details li {
+            font-size: 13.5px;
+            color: var(--text);
+            line-height: 1.75;
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 13px;
+        }
+
+        .price-details li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .price-details li strong { font-weight: 500; color: var(--gold-bright); }
+
+        .points-box {
+            margin-top: 64px;
+            border-radius: 16px;
+            padding: 40px 36px;
+            text-align: center;
+            border: 1px solid var(--line);
+            background:
+                radial-gradient(600px 200px at 50% 0%, rgba(201, 164, 92, 0.14), transparent 70%),
+                var(--card);
+        }
+
+        .points-box .eyebrow { margin-bottom: 12px; }
+
+        .points-box h3 {
+            font-family: var(--serif);
+            font-size: 21px;
+            letter-spacing: 1.5px;
+            color: var(--gold-bright);
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        .points-box p {
+            margin: 0 auto;
+            max-width: 560px;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 2;
+        }
+
+        .points-box p strong { color: var(--gold-bright); font-weight: 500; }
+
+        .wa-cta {
+            display: block;
+            margin: 44px auto 0;
+            max-width: 340px;
+            text-align: center;
+            font-family: var(--sans);
+            font-size: 15.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 16px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #072b16 !important;
+            background: linear-gradient(135deg, #4ae585, #25D366 60%, #1ba94f);
+            box-shadow: 0 14px 34px rgba(37, 211, 102, 0.22);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wa-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 42px rgba(37, 211, 102, 0.32);
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding: 28px 48px 36px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 2;
+            border-top: 1px solid var(--line-soft);
+        }
+
+        .footer .gold-rule { margin: 0 auto 20px; background: linear-gradient(to right, transparent, var(--gold), transparent); width: 120px; height: 1px; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .hero img { animation: none; }
+        }
+
+        @media (max-width: 720px) {
+            body { padding: 0 12px 40px; }
+            .container { margin-top: 16px; border-radius: 16px; }
+            .inner { padding: 0 22px; }
+            .hero { height: 300px; }
+            .hero-caption { left: 22px; right: 22px; bottom: 22px; }
+            .hero-caption h1 { font-size: 23px; }
+            .meta-bar { grid-template-columns: 1fr; }
+            .info-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .solution-card { grid-template-columns: 48px 1fr; gap: 16px; }
+            .solution-card .num { width: 48px; height: 48px; font-size: 24px; }
+            .price { font-size: 34px; }
+            section { margin-top: 48px; }
+            .footer { padding: 24px 22px 30px; }
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <img src="images/gac-e9-2026-metallic-grey.jpg" alt="廣汽傳祺 E9 旗艦改色防護示意圖">
+        <div class="hero-caption">
+            <p class="eyebrow">All In One ｜ 專屬改色防護定制方案</p>
+            <h1>廣汽傳祺 E9 PHEV<br>Alphard OEM 尊貴金屬灰 旗艦改色防護方案</h1>
+            <div class="gold-rule"></div>
+        </div>
+    </header>
+
+    <div class="inner">
+
+        <!-- 車輛資料欄 -->
+        <div class="meta-bar reveal">
+            <div class="meta-item">
+                <div class="label">車型 Model</div>
+                <div class="value"><strong>廣汽傳祺 GAC E9 (PHEV)</strong><br>2026 全新落地一手現貨車（首 6 年免驗）</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">車身顏色 Colour</div>
+                <div class="value"><strong>原廠曜石黑 ➔ Alphard 尊貴金屬灰</strong><br>原廠出廠原漆狀態 · 免撕舊膜直接施工</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">用車習慣 Usage</div>
+                <div class="value"><strong>常跑中港高速巡航（車速 80 km/h 以上）</strong><br>半室內半戶外 · 外邊洗車屋每週常規清洗</div>
+            </div>
+        </div>
+
+        <!-- 01 痛點分析 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">01 · Analysis</p>
+                <h2>用車環境痛點診斷與施工工藝對策</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>客戶環境與核心痛點</h3>
+                    <ul>
+                        <li><strong>中港高速碎石撞擊：</strong>車主經常往返內地走高速公路，E9 車頭直瀑式格柵與迎風面大，一般改色膜較易被石仔擊穿並傷及黑色底漆。</li>
+                        <li><strong>外邊洗車屋細痕累贅：</strong>每週交由坊間洗車屋打理，粗糙毛巾混雜沙塵反覆抹擦，缺乏修復力的膜料不出數月即佈滿螺旋太陽紋，令金屬灰光澤霧化。</li>
+                        <li><strong>MPV 電動雙滑門顧慮：</strong>車主十分關心「施工免拆門」，擔心拆卸全新車門板導致原廠卡扣鬆脫、膠條密封性受損而引發風噪異響，且擔心滑軌處收邊不佳導致開門刮頂夾膜。</li>
+                        <li><strong>原廠黑漆保值防護：</strong>黑色原廠車漆容易吸熱顯塵，若採用劣質背膠日後撕膜恐殘留死膠咬傷清漆，降低日後一手車保值轉售價值。</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>我哋嘅專業處置與對策</h3>
+                    <ul>
+                        <li><strong>彩色 TPU 重裝物理防護：</strong>推薦 8.0 mil 加厚脂肪族光學 TPU 膜料，具備高韌性與動能緩衝，有效吸收高速公路飛石衝擊，保護原廠車漆。</li>
+                        <li><strong>雙塗層熱自癒抗污塗層：</strong>配備奈米自癒塗層，洗車屋毛巾留下的微細太陽紋遇熱（陽光照射或熱水沖洗）即可撫平，保持深邃鏡面光感。</li>
+                        <li><strong>原廠精密數據「免拆門」工藝：</strong>堅持免拆門總成與原廠內飾板，配合精準車身預裁數據與內收邊技術，令滑門滑軌開合順滑，減少頂邊及異響。</li>
+                        <li><strong>低初黏可移除背膠：</strong>施工前進行出廠深層脫脂除蠟，全車使用專用無酸安裝液，日後撕除不易留殘膠，保護出廠原漆狀態。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 方案對比 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">02 · Solutions</p>
+                <h2>方案對比：各方案解決的核心問題</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="solution-card">
+                <div class="num">A</div>
+                <div>
+                    <h4>方案 A 解決要點｜尊爵金屬灰 光學級彩色 TPU 車衣保護膜（Color PPF）</h4>
+                    <p>專為<strong>中港跨境長途駕駛及追求漆面質感</strong>的車主打造。針對「高速石仔彈破底漆」與「洗車屋螺旋太陽紋」兩大痛點。以 <strong>8.0 mil TPU 實體車衣</strong>配合 Alphard 尊貴金屬灰色調，呈現少橘皮紋的金屬反射光芒，並自帶受熱自癒修復力，兼具換色美學與防護。</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="num">B</div>
+                <div>
+                    <h4>方案 B 解決要點｜進口超亮金屬灰 鑄造級專業車身改色膜（Vinyl Wrap）</h4>
+                    <p>專為<strong>講究高性價比、希望迅速煥新車色氣質</strong>的車主度身定造。重點解決「黑色車身容易顯髒顯紋」與「原廠改色免拆門精密收邊」的工藝需求。採用進口鑄造級高性能膜料，以高色準度呈現 Alphard 灰調氣場，具備導氣槽與耐候背膠，在可控預算內實現外觀尊爵升級。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 報價方案 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">03 · Quotation</p>
+                <h2>專屬定製報價方案</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="pricing-grid">
+
+                <!-- 方案 A (Featured) -->
+                <div class="price-card featured">
+                    <div class="badge">首席顧問推薦 · 旗艦首選</div>
+                    <div class="plan-tag">PLAN A</div>
+                    <h3>尊爵金屬灰 光學級彩色 TPU 車衣保護膜</h3>
+                    <div class="price">HK$ 15,999</div>
+                    <div class="price-note">全車連施工 · 免拆門精密包邊工藝</div>
+                    <ul class="price-details">
+                        <li><strong>物料規格：</strong>脂肪族彩色 TPU 車衣（8.0 mil 厚度）</li>
+                        <li><strong>漆面質感：</strong>Toyota Alphard OEM 金屬尊貴灰調色，告別塑料橘皮感</li>
+                        <li><strong>石仔防禦：</strong>加厚韌性物理吸能層，抵擋中港高速公路彈石衝擊</li>
+                        <li><strong>劃痕修復：</strong>微痕受熱自癒功能（日照／溫水撫平洗車紋）</li>
+                        <li><strong>滑門工序：</strong>免拆門專屬包邊處理，電動中門開合順暢、減少異響</li>
+                        <li><strong>漆面整備：</strong>連新車出廠漆面深層脫脂、除油膜及淨化工程</li>
+                        <li><strong>質保承諾：</strong>原廠 <strong>7 年</strong> 質保（防龜裂/脫膠/起泡保障）</li>
+                    </ul>
+                </div>
+
+                <!-- 方案 B -->
+                <div class="price-card">
+                    <div class="plan-tag">PLAN B</div>
+                    <h3>進口超亮金屬灰 鑄造級專業改色膜</h3>
+                    <div class="price">HK$ 13,999</div>
+                    <div class="price-note">全車連施工 · 免拆門邊角加固工藝</div>
+                    <ul class="price-details">
+                        <li><strong>物料規格：</strong>進口高性能鑄造級改色膜（約 3.5 - 4.0 mil）</li>
+                        <li><strong>漆面質感：</strong>高色準還原 Alphard 尊貴金屬灰質感，車身平整度高</li>
+                        <li><strong>排氣背膠：</strong>微導氣槽背膠技術，減少起泡、耐候性佳</li>
+                        <li><strong>滑門工序：</strong>高階無痕免拆門專業收邊工藝，不破壞原廠卡扣飾板</li>
+                        <li><strong>可逆保護：</strong>可移除低殘膠配方，撕除時不易傷原漆、咬清漆</li>
+                        <li><strong>漆面整備：</strong>連出廠漆面標準深層去污及除蠟防護作業</li>
+                        <li><strong>質保承諾：</strong>享有 <strong>3 年</strong> 施工品質保證（防翹邊/非人為脫落）</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 積分福利 -->
+        <section class="reveal">
+            <div class="points-box">
+                <p class="eyebrow">Exclusive Privilege</p>
+                <h3>獨家養車福利：消費 100% 轉為現金積分！</h3>
+                <p>今次施工消費嘅每一蚊，將全數自動轉為 <strong>現金積分（1 分 = $1 現金）</strong>。<br>
+                大額積分永久保留，日後可直接用於 <strong>洗車美容、續車保（汽車保險）、續牌費（政府牌費）</strong> 直接當錢扣，實行「一蚊當一蚊用」！</p>
+            </div>
+        </section>
+
+        <a class="wa-cta reveal" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20GAC%20E9%20%E9%87%91%E5%B1%AC%E7%81%B0%E6%94%B9%E8%89%B2%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">💬 WhatsApp 立即聯絡預約</a>
+
+    </div>
+
+    <!-- 頁腳 -->
+    <div class="footer">
+        <div class="gold-rule"></div>
+        傳祺 E9 PHEV 旗艦改色防護方案 ｜ 首席銷售顧問專屬定製提案<br>
+        專為 Matthew 閣下度身定製 ｜ 預約交車落地即時施工排期<br>
+        WhatsApp：<a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20GAC%20E9%20%E9%87%91%E5%B1%AC%E7%81%B0%E6%94%B9%E8%89%B2%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="color: var(--gold-bright); text-decoration: none;">9588 5226</a>
+    </div>
+
+</div>
+
+<script>
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.06) + 's';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
+
