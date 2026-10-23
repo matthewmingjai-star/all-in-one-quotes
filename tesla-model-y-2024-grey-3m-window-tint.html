@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Tesla Model Y 隔熱與高隱私防護方案 ｜ ALL IN ONE 首席顧問報價</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0908;
+            --surface: #131110;
+            --card: #171411;
+            --gold: #c9a45c;
+            --gold-bright: #e8cf9a;
+            --gold-deep: #8a6d33;
+            --text: #ede7db;
+            --muted: #9d9482;
+            --line: rgba(201, 164, 92, 0.16);
+            --line-soft: rgba(237, 231, 219, 0.07);
+            --serif: "Noto Serif TC", serif;
+            --sans: "Noto Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background:
+                radial-gradient(1200px 600px at 50% -10%, rgba(201, 164, 92, 0.06), transparent 60%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0 20px 60px;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 880px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--line-soft);
+            border-radius: 20px;
+            margin-top: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        }
+
+        .inner { padding: 0 48px; }
+
+        .hero {
+            position: relative;
+            height: 460px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 62%;
+            transform: scale(1.02);
+            animation: heroDrift 14s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroDrift {
+            from { transform: scale(1.02) translateX(0); }
+            to   { transform: scale(1.08) translateX(-8px); }
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 9, 8, 0.15) 0%,
+                rgba(10, 9, 8, 0.05) 40%,
+                rgba(19, 17, 16, 0.88) 82%,
+                var(--surface) 100%
+            );
+        }
+
+        .hero-caption {
+            position: absolute;
+            left: 48px;
+            right: 48px;
+            bottom: 34px;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            font-weight: 500;
+        }
+
+        .hero-caption h1 {
+            font-family: var(--serif);
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0 0 18px;
+            line-height: 1.35;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .gold-rule {
+            width: 56px;
+            height: 2px;
+            background: linear-gradient(to right, var(--gold), transparent);
+        }
+
+        .meta-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            margin: 34px 0 0;
+        }
+
+        .meta-item {
+            background: var(--surface);
+            padding: 20px 24px;
+        }
+
+        .meta-item .label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .meta-item .value {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        section { margin-top: 64px; }
+        .section-head { margin-bottom: 28px; }
+        .section-head .eyebrow { margin-bottom: 10px; }
+
+        .section-head h2 {
+            font-family: var(--serif);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin: 0 0 16px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 14px;
+            padding: 28px;
+            transition: transform 0.35s ease, border-color 0.35s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-3px);
+            border-color: var(--line);
+        }
+
+        .info-box h3 {
+            font-family: var(--serif);
+            font-size: 16.5px;
+            letter-spacing: 1px;
+            color: var(--gold-bright);
+            margin: 0 0 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+            font-weight: 600;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .info-box li {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.85;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .info-box li:last-child { margin-bottom: 0; }
+
+        .info-box li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.85em;
+            width: 8px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .info-box li strong { color: var(--text); font-weight: 500; }
+
+        .solution-card {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 24px;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .solution-card:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .solution-card .num {
+            font-family: var(--serif);
+            font-size: 34px;
+            color: var(--gold);
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .solution-card h4 {
+            font-family: var(--serif);
+            font-size: 17px;
+            letter-spacing: 0.8px;
+            margin: 6px 0 12px;
+            color: var(--gold-bright);
+            font-weight: 600;
+        }
+
+        .solution-card p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.9;
+        }
+
+        .solution-card p strong { color: var(--text); font-weight: 500; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .price-card {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 16px;
+            padding: 34px 30px;
+            position: relative;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .price-card:hover { transform: translateY(-4px); }
+
+        .price-card.featured {
+            border: 1px solid transparent;
+            background:
+                linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(160deg, var(--gold-bright), var(--gold-deep) 60%, rgba(138, 109, 51, 0.3)) border-box;
+            box-shadow: 0 20px 50px rgba(201, 164, 92, 0.10);
+        }
+
+        .badge {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            color: #1a1408;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 6px 18px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .plan-tag {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .price-card h3 {
+            font-family: var(--serif);
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 0 0 20px;
+            font-weight: 600;
+        }
+
+        .price {
+            font-family: var(--serif);
+            font-size: 40px;
+            color: var(--gold-bright);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .price-note {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .price-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .price-details li {
+            font-size: 13.5px;
+            color: var(--text);
+            line-height: 1.75;
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 13px;
+        }
+
+        .price-details li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .price-details li strong { font-weight: 500; color: var(--gold-bright); }
+
+        .points-box {
+            margin-top: 64px;
+            border-radius: 16px;
+            padding: 40px 36px;
+            text-align: center;
+            border: 1px solid var(--line);
+            background:
+                radial-gradient(600px 200px at 50% 0%, rgba(201, 164, 92, 0.14), transparent 70%),
+                var(--card);
+        }
+
+        .points-box .eyebrow { margin-bottom: 12px; }
+
+        .points-box h3 {
+            font-family: var(--serif);
+            font-size: 21px;
+            letter-spacing: 1.5px;
+            color: var(--gold-bright);
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        .points-box p {
+            margin: 0 auto;
+            max-width: 560px;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 2;
+        }
+
+        .points-box p strong { color: var(--gold-bright); font-weight: 500; }
+
+        .wa-cta {
+            display: block;
+            margin: 44px auto 0;
+            max-width: 340px;
+            text-align: center;
+            font-family: var(--sans);
+            font-size: 15.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 16px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #072b16 !important;
+            background: linear-gradient(135deg, #4ae585, #25D366 60%, #1ba94f);
+            box-shadow: 0 14px 34px rgba(37, 211, 102, 0.22);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wa-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 42px rgba(37, 211, 102, 0.32);
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding: 28px 48px 36px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 2;
+            border-top: 1px solid var(--line-soft);
+        }
+
+        .footer .gold-rule { margin: 0 auto 20px; background: linear-gradient(to right, transparent, var(--gold), transparent); width: 120px; height: 1px; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .hero img { animation: none; }
+        }
+
+        @media (max-width: 720px) {
+            body { padding: 0 12px 40px; }
+            .container { margin-top: 16px; border-radius: 16px; }
+            .inner { padding: 0 22px; }
+            .hero { height: 300px; }
+            .hero-caption { left: 22px; right: 22px; bottom: 22px; }
+            .hero-caption h1 { font-size: 23px; }
+            .meta-bar { grid-template-columns: 1fr; }
+            .info-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .solution-card { grid-template-columns: 48px 1fr; gap: 16px; }
+            .solution-card .num { width: 48px; height: 48px; font-size: 24px; }
+            .price { font-size: 34px; }
+            section { margin-top: 48px; }
+            .footer { padding: 24px 22px 30px; }
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <img src="images/tesla-model-y-2024-grey.jpg" alt="Tesla Model Y 質感示意圖">
+        <div class="hero-caption">
+            <p class="eyebrow">All In One ｜ 專屬隔熱膜定制方案</p>
+            <h1>Tesla Model Y<br>專屬頂級隔熱與高隱私防護方案</h1>
+            <div class="gold-rule"></div>
+        </div>
+    </header>
+
+    <div class="inner">
+
+        <!-- 車輛資料欄 -->
+        <div class="meta-bar reveal">
+            <div class="meta-item">
+                <div class="label">車型 Model</div>
+                <div class="value"><strong>Tesla Model Y</strong><br>2024 一手新車</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">車身顏色/狀態 Colour</div>
+                <div class="value"><strong>原廠玻璃面</strong><br>首次貼新膜（無舊膜殘膠）</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">用車習慣/環境 Usage</div>
+                <div class="value"><strong>露天長泊</strong><br>高防曬要求、追求深黑私穩</div>
+            </div>
+        </div>
+
+        <!-- 01 痛點分析 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">01 · Analysis</p>
+                <h2>露天長泊與私穩安全痛點深度拆解</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>客戶用車痛點與環境隱患</h3>
+                    <ul>
+                        <li><strong>烈日暴曬，溫度難耐：</strong>露天停泊導致車內溫度容易急升，加速內飾老化，冷氣高負荷更會直接消耗 Model Y 的電量與續航。</li>
+                        <li><strong>劣質膜料隱患：</strong>普通金屬或染色膜長期暴曬容易起泡退色、釋放異味，且金屬成分會干擾車內 GPS、5G 與 Autopilot 訊號。</li>
+                        <li><strong>「隱私與視線」衝突：</strong>想要深黑私穩，但若前擋及前窗盲目變暗，在雨夜或進出地庫時後視鏡視線偏暗，有安全隱患。</li>
+                        <li><strong>無舊膜原廠狀態：</strong>全新玻璃首次貼膜，需要細緻的精細清潔與收邊，避免任何塵粒與留白。</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>我哋嘅專業處置與對策</h3>
+                    <ul>
+                        <li><strong>全陶瓷／多層光學阻熱：</strong>採用不含金屬成分的無機陶瓷技術，不干擾 5G 與車機 GPS，有效阻隔太陽熱能，守護續航。</li>
+                        <li><strong>精準烤膜工藝：</strong>針對 Model Y 特大弧度玻璃進行精準高溫烤膜，側窗邊緣精修，升降窗貼服。</li>
+                        <li><strong>光學單向「外黑內透」：</strong>分區透光率管理，前擋及前門側窗維持合規高透光（70% 以上）防眩光，後排側窗配深黑私穩，外看不透，內看清晰。</li>
+                        <li><strong>微細無塵精細施工：</strong>進行高規格玻璃微塵清潔，減少氣泡與雜質，保障新車透光質感。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 方案對比 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">02 · Solutions</p>
+                <h2>方案對比：各方案解決的核心問題</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="solution-card">
+                <div class="num">A</div>
+                <div>
+                    <h4>方案 A 解決要點｜3M Crystalline + Ceramic IR 旗艦高清私穩方案</h4>
+                    <p>此方案專為追求「高效隔熱」與「清晰夜間視野」的車主而設。前擋採用 3M 超過 200 層多層光學薄膜，在不影響夜間視野的前提下高效阻隔紅外線；後排側窗則搭配深色陶瓷膜，提供深黑隱私之餘，車內往外看依然清晰。不含金屬成分，訊號不受干擾，更擁有 5 年原廠質保，最適合長期露天停泊的 Model Y。</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="num">B</div>
+                <div>
+                    <h4>方案 B 解決要點｜進口納米陶瓷深黑高性價比方案</h4>
+                    <p>此方案針對預算有限、重視隱私與基礎防曬的車主。全車採用進口納米陶瓷隔熱膜，不含金屬、不影響網絡與 GPS 訊號。後排側窗可達致您心儀的深黑遮蔽效果，前擋則保留安全清晰度。雖在熱量折射率上略遜於 3M 旗艦，但仍能有效阻隔紅外線與 99% 以上紫外線，是高性價比的實用之選。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 報價方案 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">03 · Quotation</p>
+                <h2>專屬定製報價方案（前擋風玻璃 + 四隻車窗）</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="pricing-grid">
+
+                <div class="price-card featured">
+                    <div class="badge">首席顧問推薦 · 旗艦首選</div>
+                    <div class="plan-tag">PLAN A</div>
+                    <h3>方案 A：3M Crystalline + Ceramic IR 旗艦高清私穩方案</h3>
+                    <div class="price">HK$ 3,499</div>
+                    <div class="price-note">特惠全包價 / 原價 HK$5,800</div>
+                    <ul class="price-details">
+                        <li><strong>3M Crystalline 前擋：</strong>超過 200 層多層光學薄膜技術，高效阻隔紅外線，夜間及雨天視野清晰。</li>
+                        <li><strong>3M Ceramic IR 側窗：</strong>後排深黑高隱私，前門合規高透光，外觀質感黑化，保障後排私密。</li>
+                        <li><strong>訊號不受干擾：</strong>非金屬光學與陶瓷材質，Tesla GPS、手機及 Autopilot 訊號暢通。</li>
+                        <li><strong>降溫與電量守護：</strong>有效阻隔太陽熱能，大幅減輕露天暴曬下的空調負荷，延長續航。</li>
+                        <li><strong>精細收邊工藝：</strong>資深師傅針對 Model Y 無框玻璃烤膜，精修邊緣，貼合服貼。</li>
+                        <li><strong>5 年原廠質保：</strong>防起泡、防發黃、防脫膠、防氧化退色。</li>
+                    </ul>
+                </div>
+
+                <div class="price-card">
+                    <div class="plan-tag">PLAN B</div>
+                    <h3>方案 B：進口納米陶瓷深黑高性價比方案</h3>
+                    <div class="price">HK$ 2,999</div>
+                    <div class="price-note">特惠全包價 / 原價 HK$3,500</div>
+                    <ul class="price-details">
+                        <li><strong>進口納米陶瓷前擋：</strong>高透光兼顧日常防曬，有效阻隔紫外線與基礎紅外線熱量。</li>
+                        <li><strong>深黑陶瓷側窗：</strong>後排滿足您「外面看不進去」的強烈隱私需求，同時具備基礎防護。</li>
+                        <li><strong>全陶瓷無金屬架構：</strong>不影響任何電子設備及手機網絡導航。</li>
+                        <li><strong>優質耐候性能：</strong>抵禦紫外線與戶外高溫，不易老化、不揮發異味。</li>
+                        <li><strong>精細清潔與標準貼膜：</strong>專業貼膜工藝，確保膜面平整。</li>
+                        <li><strong>3 年原廠品質保障：</strong>防開膠、起泡原廠質保。</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 積分福利 -->
+        <section class="reveal">
+            <div class="points-box">
+                <p class="eyebrow">Exclusive Privilege</p>
+                <h3>獨家養車福利：消費 100% 轉為現金積分！</h3>
+                <p>今次施工消費嘅每一蚊，將全數自動轉為 <strong>現金積分（1 分 = $1 現金）</strong>。<br>
+                若您選擇方案 A（消費 $3,499），您將即時獲得 <strong>3,499 現金積分</strong>，大額積分永久保留，日後可直接用於 <strong>洗車美容、續車保（汽車保險）、續牌費（政府牌費）</strong> 直接當錢扣，實行「一蚊當一蚊用」！</p>
+            </div>
+        </section>
+
+    <a class="wa-cta reveal" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Tesla%20Model%20Y%20%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">💬 WhatsApp 立即聯絡預約</a>
+</div>
+
+    <!-- 頁腳 -->
+    <div class="footer">
+        <div class="gold-rule"></div>
+        如有任何查詢或想預約檔期，歡迎隨時透過 WhatsApp <a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Tesla%20Model%20Y%20%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="color: var(--gold-bright); text-decoration: none;">9588 5226</a> 聯絡我哋嘅首席銷售顧問。<br>
+        期待為您嘅 Tesla Model Y 帶來出色嘅防曬與私隱守護，開啟舒適安全新車旅程！<br>
+        ALL IN ONE ｜ 專屬汽車美容・隔熱貼膜顧問
+    </div>
+
+</div>
+
+<script>
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.06) + 's';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
