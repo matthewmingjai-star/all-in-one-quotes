@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Polestar 2 彩色 TPU 轉色保護方案 ｜ ALL IN ONE 首席顧問報價</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0908;
+            --surface: #131110;
+            --card: #171411;
+            --gold: #c9a45c;
+            --gold-bright: #e8cf9a;
+            --gold-deep: #8a6d33;
+            --text: #ede7db;
+            --muted: #9d9482;
+            --line: rgba(201, 164, 92, 0.16);
+            --line-soft: rgba(237, 231, 219, 0.07);
+            --serif: "Noto Serif TC", serif;
+            --sans: "Noto Sans TC", -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: var(--sans);
+            background:
+                radial-gradient(1200px 600px at 50% -10%, rgba(201, 164, 92, 0.06), transparent 60%),
+                var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0 20px 60px;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 880px;
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--line-soft);
+            border-radius: 20px;
+            margin-top: 40px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        }
+
+        .inner { padding: 0 48px; }
+
+        .hero {
+            position: relative;
+            height: 460px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 62%;
+            transform: scale(1.02);
+            animation: heroDrift 14s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroDrift {
+            from { transform: scale(1.02) translateX(0); }
+            to   { transform: scale(1.08) translateX(-8px); }
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                to bottom,
+                rgba(10, 9, 8, 0.15) 0%,
+                rgba(10, 9, 8, 0.05) 40%,
+                rgba(19, 17, 16, 0.88) 82%,
+                var(--surface) 100%
+            );
+        }
+
+        .hero-caption {
+            position: absolute;
+            left: 48px;
+            right: 48px;
+            bottom: 34px;
+            z-index: 2;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            font-weight: 500;
+        }
+
+        .hero-caption h1 {
+            font-family: var(--serif);
+            font-size: 34px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 0 0 18px;
+            line-height: 1.35;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .gold-rule {
+            width: 56px;
+            height: 2px;
+            background: linear-gradient(to right, var(--gold), transparent);
+        }
+
+        .meta-bar {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            margin: 34px 0 0;
+        }
+
+        .meta-item {
+            background: var(--surface);
+            padding: 20px 24px;
+        }
+
+        .meta-item .label {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .meta-item .value {
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        section { margin-top: 64px; }
+        .section-head { margin-bottom: 28px; }
+        .section-head .eyebrow { margin-bottom: 10px; }
+
+        .section-head h2 {
+            font-family: var(--serif);
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin: 0 0 16px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .info-box {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 14px;
+            padding: 28px;
+            transition: transform 0.35s ease, border-color 0.35s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-3px);
+            border-color: var(--line);
+        }
+
+        .info-box h3 {
+            font-family: var(--serif);
+            font-size: 16.5px;
+            letter-spacing: 1px;
+            color: var(--gold-bright);
+            margin: 0 0 16px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--line);
+            font-weight: 600;
+        }
+
+        .info-box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .info-box li {
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.85;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .info-box li:last-child { margin-bottom: 0; }
+
+        .info-box li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.85em;
+            width: 8px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .info-box li strong { color: var(--text); font-weight: 500; }
+
+        .solution-card {
+            display: grid;
+            grid-template-columns: 64px 1fr;
+            gap: 24px;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .solution-card:last-child { border-bottom: none; padding-bottom: 0; }
+
+        .solution-card .num {
+            font-family: var(--serif);
+            font-size: 34px;
+            color: var(--gold);
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .solution-card h4 {
+            font-family: var(--serif);
+            font-size: 17px;
+            letter-spacing: 0.8px;
+            margin: 6px 0 12px;
+            color: var(--gold-bright);
+            font-weight: 600;
+        }
+
+        .solution-card p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 1.9;
+        }
+
+        .solution-card p strong { color: var(--text); font-weight: 500; }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .price-card {
+            background: var(--card);
+            border: 1px solid var(--line-soft);
+            border-radius: 16px;
+            padding: 34px 30px;
+            position: relative;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+        }
+
+        .price-card:hover { transform: translateY(-4px); }
+
+        .price-card.featured {
+            border: 1px solid transparent;
+            background:
+                linear-gradient(var(--card), var(--card)) padding-box,
+                linear-gradient(160deg, var(--gold-bright), var(--gold-deep) 60%, rgba(138, 109, 51, 0.3)) border-box;
+            box-shadow: 0 20px 50px rgba(201, 164, 92, 0.10);
+        }
+
+        .badge {
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+            color: #1a1408;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            padding: 6px 18px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .plan-tag {
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .price-card h3 {
+            font-family: var(--serif);
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin: 0 0 20px;
+            font-weight: 600;
+        }
+
+        .price {
+            font-family: var(--serif);
+            font-size: 40px;
+            color: var(--gold-bright);
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .price-note {
+            font-size: 12px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            margin-bottom: 24px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid var(--line-soft);
+        }
+
+        .price-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .price-details li {
+            font-size: 13.5px;
+            color: var(--text);
+            line-height: 1.75;
+            padding-left: 24px;
+            position: relative;
+            margin-bottom: 13px;
+        }
+
+        .price-details li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .price-details li strong { font-weight: 500; color: var(--gold-bright); }
+
+        .points-box {
+            margin-top: 64px;
+            border-radius: 16px;
+            padding: 40px 36px;
+            text-align: center;
+            border: 1px solid var(--line);
+            background:
+                radial-gradient(600px 200px at 50% 0%, rgba(201, 164, 92, 0.14), transparent 70%),
+                var(--card);
+        }
+
+        .points-box .eyebrow { margin-bottom: 12px; }
+
+        .points-box h3 {
+            font-family: var(--serif);
+            font-size: 21px;
+            letter-spacing: 1.5px;
+            color: var(--gold-bright);
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        .points-box p {
+            margin: 0 auto;
+            max-width: 560px;
+            font-size: 14px;
+            color: var(--muted);
+            line-height: 2;
+        }
+
+        .points-box p strong { color: var(--gold-bright); font-weight: 500; }
+
+        .wa-cta {
+            display: block;
+            margin: 44px auto 0;
+            max-width: 340px;
+            text-align: center;
+            font-family: var(--sans);
+            font-size: 15.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 16px 24px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #072b16 !important;
+            background: linear-gradient(135deg, #4ae585, #25D366 60%, #1ba94f);
+            box-shadow: 0 14px 34px rgba(37, 211, 102, 0.22);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .wa-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 42px rgba(37, 211, 102, 0.32);
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding: 28px 48px 36px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 2;
+            border-top: 1px solid var(--line-soft);
+        }
+
+        .footer .gold-rule { margin: 0 auto 20px; background: linear-gradient(to right, transparent, var(--gold), transparent); width: 120px; height: 1px; }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .reveal { opacity: 1; transform: none; transition: none; }
+            .hero img { animation: none; }
+        }
+
+        @media (max-width: 720px) {
+            body { padding: 0 12px 40px; }
+            .container { margin-top: 16px; border-radius: 16px; }
+            .inner { padding: 0 22px; }
+            .hero { height: 300px; }
+            .hero-caption { left: 22px; right: 22px; bottom: 22px; }
+            .hero-caption h1 { font-size: 23px; }
+            .meta-bar { grid-template-columns: 1fr; }
+            .info-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .solution-card { grid-template-columns: 48px 1fr; gap: 16px; }
+            .solution-card .num { width: 48px; height: 48px; font-size: 24px; }
+            .price { font-size: 34px; }
+            section { margin-top: 48px; }
+            .footer { padding: 24px 22px 30px; }
+        }
+    </style>
+
+
+</head>
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <img src="images/polestar-2-sage-green-tpu.jpg" alt="Polestar 2 質感示意圖">
+        <div class="hero-caption">
+            <p class="eyebrow">All In One ｜ Polestar 2 彩色 TPU 轉色保護方案</p>
+            <h1>Polestar 2 新版全車彩色 TPU 轉色保護方案</h1>
+            <div class="gold-rule"></div>
+        </div>
+    </header>
+
+    <div class="inner">
+
+        <!-- 車輛資料欄 -->
+        <div class="meta-bar reveal">
+            <div class="meta-item">
+                <div class="label">車型 Model</div>
+                <div class="value"><strong>Polestar 2（2024 小改款新版）</strong><br>2023 年底出廠 · 封閉式 SmartZone 車頭</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">車身顏色 Colour</div>
+                <div class="value"><strong>原廠白 ➔ 亮面鼠尾草綠</strong><br>Gloss Nebula Green · 純淨無黑拉花條</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">用車習慣 Usage</div>
+                <div class="value"><strong>主要泊室內 · 偶爾行高速公路</strong><br>自助手洗與洗車屋／工人抹車並行</div>
+            </div>
+        </div>
+
+        <!-- 01 痛點分析 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">01 · Analysis</p>
+                <h2>客戶用車環境痛點與專業施工對策</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>客戶用車環境與潛在痛點</h3>
+                    <ul>
+                        <li><strong>雨後泊室內容易積聚水漬：</strong>雨天行車或洗車後駛入室內停車場，車身殘留的雨水及礦物質水珠在無風環境下緩慢風乾，容易形成「水漬印（Water Spots）」，令亮面綠色變得暗啞。</li>
+                        <li><strong>高速撞風彈石與洗車太陽紋風險：</strong>Polestar 2 新版採用大面積封閉式車頭，行駛高速公路時正面容易受碎石彈花；同時交由洗車屋或工人抹車，毛巾微砂容易刷出蜘蛛網狀「太陽紋」，破壞亮面鏡面折射度。</li>
+                        <li><strong>白車轉綠，留意露白邊與黃變：</strong>2023 年底落地車輛漆面已累積一定氧化與鐵粉；由原廠白轉為亮面鼠尾草綠，若包邊工藝不夠深或塗層抗氧力不足，門縫轉角容易露白邊及日後發黃。</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3>我哋嘅專業處置與對策</h3>
+                    <ul>
+                        <li><strong>疏水抗污塗層（易打理核心）：</strong>選用疏水表層 TPU 膜料，令水珠較易滑落，減少水漬附著；日常交洗車屋或自助手洗以清水沖抹較易清潔。</li>
+                        <li><strong>加厚脂肪族 TPU ＋ 遇熱自癒：</strong>韌性結構有助吸收高速公路碎石衝擊，保護原廠白漆；表層具備熱修復功能，洗車抹車留下的輕微花痕經陽光照射或熱水淋洗可還原。</li>
+                        <li><strong>貼前漆面修復 ＋ 手工深層全包邊工藝：</strong>施工前進行全車深層去鐵粉、去柏油及鏡面還原拋光，減少漆面雜質；配合全包邊工藝將膜料包入鈑金內側，減少白底外露，呈現純淨無黑條的亮面鼠尾草綠。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 方案對比 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">02 · Solutions</p>
+                <h2>方案對比：各方案解決的核心問題</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="solution-card">
+                <div class="num">A</div>
+                <div>
+                    <h4>方案 A 解決要點｜光學抗污彩色 TPU 保護膜</h4>
+                    <p>專為追求<strong>「亮面鏡面光澤」</strong>與<strong>「輕鬆打理」</strong>而設。採用光學級脂肪族 TPU 配合<strong>疏水抗污塗層</strong>，減少室內停車場水珠風乾留水印的煩惱；加厚防護層與遇熱自癒功能，即使經常交由洗車屋抹車或行駛高速公路，亦較易維持亮面通透質感，享<strong>原廠質保</strong>。</p>
+                </div>
+            </div>
+            <div class="solution-card">
+                <div class="num">B</div>
+                <div>
+                    <h4>方案 B 解決要點｜標準耐候級彩色 TPU 轉色保護膜</h4>
+                    <p>兼顧<strong>「TPU 物理防刮護漆」</strong>與<strong>「高性價比靈活預算」</strong>之選。相比傳統 PVC 改色紙，同樣具備基礎防碎石彈花、防輕微刮蹭及遇熱自癒能力，呈現<strong>亮面鼠尾草綠（Gloss Nebula Green，不加側面黑條）</strong>純淨質感，適合日常市區代步及偶爾行高速公路用車需求，附帶<strong>品質保障</strong>。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 報價方案 -->
+        <section class="reveal">
+            <div class="section-head">
+                <p class="eyebrow">03 · Quotation</p>
+                <h2>專屬定製報價方案</h2>
+                <div class="gold-rule"></div>
+            </div>
+            <div class="pricing-grid">
+
+                <div class="price-card featured">
+                    <div class="badge">首席顧問推薦 · 易打理抗水漬</div>
+                    <div class="plan-tag">PLAN A</div>
+                    <h3>方案 A：光學抗污彩色 TPU 保護膜</h3>
+                    <div class="price">HK$ 18,800</div>
+                    <div class="price-note">全車包工包料 · 連貼前漆面深層修復</div>
+                    <ul class="price-details">
+                        <li><strong>光學脂肪族 TPU：</strong>高韌性結構有助抵禦高速公路碎石衝擊</li>
+                        <li><strong>專屬色號訂製：</strong>亮面鼠尾草綠（Gloss Nebula Green），全車純淨無黑拉花條</li>
+                        <li><strong>疏水抗污塗層：</strong>減少室內泊車水珠風乾水印，洗車屋抹車較易清潔</li>
+                        <li><strong>遇熱自癒塗層：</strong>洗車太陽紋與輕微抹車花痕遇熱可修復，維持鏡面質感</li>
+                        <li><strong>全車深層清潔＋拋光＋手工全包邊：</strong>清除漆面雜質並減少原廠白邊外露</li>
+                        <li><strong>原廠質保：</strong>涵蓋非人為開裂、起泡、脫膠、黃變</li>
+                    </ul>
+                </div>
+
+                <div class="price-card">
+                    <div class="plan-tag">PLAN B</div>
+                    <h3>方案 B：標準耐候級彩色 TPU 轉色保護膜</h3>
+                    <div class="price">HK$ 14,800</div>
+                    <div class="price-note">全車包工包料 · 高性價比防護改色</div>
+                    <ul class="price-details">
+                        <li><strong>實用級脂肪族 TPU：</strong>具備基礎防刮花、防碎石衝擊物理保護力</li>
+                        <li><strong>專屬色號訂製：</strong>亮面鼠尾草綠（Gloss Nebula Green），全車純淨無黑拉花條</li>
+                        <li><strong>標準抗污自癒表層：</strong>比傳統 PVC 改色紙更易清潔，具備日常輕微熱修復能力</li>
+                        <li><strong>全車精細去污＋全車包邊貼膜：</strong>精準貼合 Polestar 2 新版封閉式車頭線條</li>
+                        <li><strong>品質保障：</strong>涵蓋非人為脫膠、起泡及結構性老化</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 積分福利 -->
+        <section class="reveal">
+            <div class="points-box">
+                <p class="eyebrow">Exclusive Privilege</p>
+                <h3>獨家養車福利：消費 100% 轉為現金積分！</h3>
+                <p>今次施工消費嘅每一蚊，將全數自動轉為 <strong>現金積分（1 分 = $1 現金）</strong>。<br>
+                大額積分永久保留，日後可直接用於 <strong>洗車美容、續車保（汽車保險）、續牌費（政府牌費）</strong> 直接當錢扣，實行「一蚊當一蚊用」！</p>
+            </div>
+        </section>
+
+    <a class="wa-cta reveal" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Polestar%202%20%E5%BD%A9%E8%89%B2%20TPU%20%E8%BD%89%E8%89%B2%E4%BF%9D%E8%AD%B7%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">💬 WhatsApp 立即聯絡預約</a>
+    </div>
+
+    <!-- 頁腳 -->
+    <div class="footer">
+        <div class="gold-rule"></div>
+        ALL IN ONE ｜首席銷售顧問 專屬呈獻<br>
+        為 Angel 嘅 Polestar 2 打造亮面鼠尾草綠 · 歡迎隨時預約留位及確認色板<br>
+        WhatsApp：<a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Polestar%202%20%E5%BD%A9%E8%89%B2%20TPU%20%E8%BD%89%E8%89%B2%E4%BF%9D%E8%AD%B7%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="color: var(--gold-bright); text-decoration: none;">9588 5226</a>
+    </div>
+
+</div>
+
+<script>
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = (i * 0.06) + 's';
+        observer.observe(el);
+    });
+</script>
+
+</body>
+</html>
