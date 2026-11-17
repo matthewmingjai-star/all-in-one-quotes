@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW iX3 全車連天窗隔熱膜方案 ｜ ALL IN ONE 首席顧問報價</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-primary: #0a0908;
+      --bg-card: #131110;
+      --bg-secondary: #1c1917;
+      --gold-main: #c9a45c;
+      --gold-light: #dfbe7a;
+      --gold-dark: #8c6d32;
+      --gold-border: rgba(201, 164, 92, 0.25);
+      --gold-border-strong: rgba(201, 164, 92, 0.65);
+      --gold-glow: rgba(201, 164, 92, 0.16);
+      --text-title: #f5f5f5;
+      --text-body: #d1d5db;
+      --text-muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      background-image:
+        radial-gradient(circle at 15% 10%, rgba(201, 164, 92, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 35%, rgba(201, 164, 92, 0.05) 0%, transparent 50%),
+        linear-gradient(180deg, #0a0908 0%, #0f0d0b 50%, #0a0908 100%);
+      color: var(--text-body);
+      font-family: 'Noto Sans TC', 'Inter', sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Decorative Gold Divider */
+    .gold-line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-main), transparent);
+      opacity: 0.45;
+      margin: 48px 0;
+    }
+
+    /* Top Brand Bar */
+    .top-nav {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--gold-border);
+      background: rgba(10, 9, 8, 0.85);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .top-nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      font-family: 'Cinzel', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo span {
+      font-size: 0.72rem;
+      font-family: 'Noto Sans TC', sans-serif;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      border-left: 1px solid var(--gold-border);
+      padding-left: 10px;
+      font-weight: 400;
+    }
+
+    .doc-tag {
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      color: var(--gold-main);
+      border: 1px solid var(--gold-border);
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(201, 164, 92, 0.06);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 72px 0 48px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.32em;
+      color: var(--gold-main);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .hero-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(2rem, 4.2vw, 3.1rem);
+      font-weight: 700;
+      color: var(--text-title);
+      letter-spacing: 0.06em;
+      line-height: 1.3;
+      margin-bottom: 18px;
+    }
+
+    .hero-title .gold-accent {
+      background: linear-gradient(135deg, #f3dca8 0%, #c9a45c 55%, #9c7938 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+
+    .client-greeting {
+      margin-top: 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: linear-gradient(135deg, rgba(28, 25, 23, 0.9), rgba(19, 17, 16, 0.9));
+      border: 1px solid var(--gold-border);
+      border-radius: 8px;
+      font-size: 0.92rem;
+      color: var(--text-title);
+    }
+
+    .client-greeting strong {
+      color: var(--gold-light);
+      font-weight: 600;
+    }
+
+    /* Meta Bar */
+    .meta-bar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 24px 0 56px;
+    }
+
+    .meta-item {
+      background: linear-gradient(145deg, rgba(28, 25, 23, 0.75), rgba(19, 17, 16, 0.92));
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--gold-border);
+      border-radius: 12px;
+      padding: 22px 24px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .meta-item:hover {
+      transform: translateY(-3px);
+      border-color: var(--gold-border-strong);
+    }
+
+    .meta-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--gold-light), var(--gold-dark));
+    }
+
+    .meta-label {
+      font-family: 'Cinzel', 'Noto Sans TC', sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      color: var(--gold-main);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .meta-value {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-title);
+    }
+
+    .meta-sub {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Section Headings */
+    .section-header {
+      margin-bottom: 32px;
+    }
+
+    .section-code {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      color: var(--gold-main);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(1.5rem, 2.8vw, 2.05rem);
+      font-weight: 700;
+      color: var(--text-title);
+      letter-spacing: 0.04em;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    /* Section 01: Analysis Split Grid */
+    .analysis-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .analysis-card {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 14px;
+      padding: 30px;
+      position: relative;
+    }
+
+    .analysis-card.solution-side {
+      background: linear-gradient(160deg, #171412 0%, #12100e 100%);
+      border-color: rgba(201, 164, 92, 0.38);
+    }
+
+    .card-badge-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid var(--gold-border);
+    }
+
+    .badge-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      background: rgba(201, 164, 92, 0.12);
+      color: var(--gold-light);
+      border: 1px solid var(--gold-border);
+    }
+
+    .card-badge-header h3 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.2rem;
+      color: var(--text-title);
+      font-weight: 600;
+    }
+
+    .point-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .point-item {
+      padding-left: 16px;
+      border-left: 2px solid rgba(201, 164, 92, 0.3);
+    }
+
+    .solution-side .point-item {
+      border-left-color: var(--gold-main);
+    }
+
+    .point-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 5px;
+    }
+
+    .point-text {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    /* Section 02: Solutions A & B Breakdown */
+    .solutions-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .sol-box {
+      background: linear-gradient(145deg, var(--bg-card), var(--bg-secondary));
+      border: 1px solid var(--gold-border);
+      border-radius: 14px;
+      padding: 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: border-color 0.3s ease;
+    }
+
+    .sol-box:hover {
+      border-color: var(--gold-border-strong);
+    }
+
+    .circle-letter {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(201, 164, 92, 0.22), rgba(201, 164, 92, 0.04));
+      border: 1.5px solid var(--gold-main);
+      color: var(--gold-light);
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(201, 164, 92, 0.15);
+    }
+
+    .sol-content h4 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.18rem;
+      color: var(--text-title);
+      margin-bottom: 6px;
+    }
+
+    .sol-spec {
+      font-size: 0.85rem;
+      color: var(--gold-main);
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .sol-content p {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    /* Section 03: Quotation Cards */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .price-card {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 16px;
+      padding: 36px 32px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease;
+    }
+
+    .price-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .price-card.featured {
+      background: linear-gradient(165deg, #1b1712 0%, #12100e 60%, #181410 100%);
+      border: 1.5px solid var(--gold-main);
+      box-shadow: 0 12px 45px rgba(201, 164, 92, 0.18), inset 0 0 30px rgba(201, 164, 92, 0.05);
+    }
+
+    .recommended-badge {
+      position: absolute;
+      top: -14px;
+      right: 28px;
+      background: linear-gradient(135deg, #e7c985 0%, #c9a45c 50%, #9f7c38 100%);
+      color: #0a0908;
+      font-family: 'Cinzel', 'Noto Sans TC', sans-serif;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      padding: 6px 16px;
+      border-radius: 999px;
+      box-shadow: 0 4px 15px rgba(201, 164, 92, 0.4);
+    }
+
+    .plan-tier {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.2em;
+      color: var(--gold-main);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .plan-name {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.48rem;
+      font-weight: 700;
+      color: var(--text-title);
+      margin-bottom: 8px;
+    }
+
+    .plan-material {
+      font-size: 0.9rem;
+      color: var(--gold-light);
+      background: rgba(201, 164, 92, 0.08);
+      border: 1px solid var(--gold-border);
+      padding: 8px 12px;
+      border-radius: 8px;
+      margin-bottom: 22px;
+    }
+
+    .price-box {
+      padding: 18px 0;
+      border-top: 1px solid var(--gold-border);
+      border-bottom: 1px solid var(--gold-border);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .price-amount {
+      font-family: 'Cinzel', 'Noto Serif TC', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+
+    .price-amount small {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-right: 4px;
+    }
+
+    .price-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.93rem;
+      color: var(--text-body);
+    }
+
+    .check-gold {
+      color: var(--gold-light);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .warranty-box {
+      background: rgba(10, 9, 8, 0.65);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+    }
+
+    .warranty-box strong {
+      color: var(--gold-light);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .cta-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-family: 'Noto Sans TC', sans-serif;
+      font-size: 0.96rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .featured .cta-btn {
+      background: linear-gradient(135deg, #dfbe7a 0%, #c9a45c 100%);
+      color: #0a0908;
+      border: none;
+      box-shadow: 0 6px 20px rgba(201, 164, 92, 0.28);
+    }
+
+    .featured .cta-btn:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+    }
+
+    .standard-btn {
+      background: transparent;
+      color: var(--gold-light);
+      border: 1px solid var(--gold-main);
+    }
+
+    .standard-btn:hover {
+      background: rgba(201, 164, 92, 0.12);
+    }
+
+    /* Exclusive Privilege Banner */
+    .privilege-section {
+      margin-top: 56px;
+      background: linear-gradient(135deg, #1b1610 0%, #12100d 50%, #1d1811 100%);
+      border: 1px solid var(--gold-border-strong);
+      border-radius: 16px;
+      padding: 36px 40px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .privilege-section::after {
+      content: '100% REBATE';
+      position: absolute;
+      right: -20px;
+      bottom: -18px;
+      font-family: 'Cinzel', serif;
+      font-size: 4.5rem;
+      font-weight: 700;
+      color: rgba(201, 164, 92, 0.05);
+      pointer-events: none;
+    }
+
+    .privilege-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+
+    .privilege-tag {
+      background: rgba(201, 164, 92, 0.16);
+      border: 1px solid var(--gold-main);
+      color: var(--gold-light);
+      font-family: 'Cinzel', serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      padding: 5px 12px;
+      border-radius: 6px;
+    }
+
+    .privilege-title {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.45rem;
+      color: var(--text-title);
+      font-weight: 700;
+    }
+
+    .privilege-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .privilege-desc {
+      font-size: 0.96rem;
+      color: var(--text-body);
+    }
+
+    .privilege-desc strong {
+      color: var(--gold-light);
+    }
+
+    .rebate-perks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .perk-pill {
+      background: rgba(10, 9, 8, 0.6);
+      border: 1px solid var(--gold-border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Interactive Confirmation Modal / Toast */
+    .selection-banner {
+      display: none;
+      margin-top: 24px;
+      padding: 18px 24px;
+      background: rgba(201, 164, 92, 0.12);
+      border: 1px solid var(--gold-main);
+      border-radius: 12px;
+      color: var(--text-title);
+      font-size: 0.95rem;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .selection-banner.active {
+      display: flex;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 64px;
+      padding: 44px 0 60px;
+      border-top: 1px solid var(--gold-border);
+      text-align: center;
+    }
+
+    .footer-quote {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+
+    .advisor-sign {
+      font-size: 0.92rem;
+      color: var(--text-body);
+      margin-bottom: 8px;
+    }
+
+    .footer-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .meta-bar,
+      .analysis-grid,
+      .solutions-wrapper,
+      .pricing-grid,
+      .privilege-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .privilege-section {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="container top-nav-inner">
+      <div class="brand-logo">
+        ALL IN ONE <span>汽車美容及貼膜工藝中心</span>
+      </div>
+      <div class="doc-tag">BESPOKE QUOTATION · 專屬報價建議書</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <span class="hero-eyebrow">All In One ｜ BMW iX3 全車連天窗隔熱膜方案</span>
+      <h1 class="hero-title">
+        尊榮車主專屬<br />
+        <span class="gold-accent">全車光學隔熱防護方案</span>
+      </h1>
+      <p class="hero-subtitle">
+        針對純電 SUV 大面積玻璃與全景天窗結構度身訂造，兼顧疏水抗水漬、低眩光駕駛視野及香港運輸署驗車透光標準。
+      </p>
+      <img src="images/bmw-ix3-2025-black-blue.jpg" alt="BMW iX3 示意圖" style="width:100%;border-radius:12px;margin-top:28px;display:block;" />
+    </section>
+
+    <!-- Meta Bar -->
+    <section class="meta-bar" aria-label="車輛核心資料">
+      <div class="meta-item">
+        <div class="meta-label">車型 Model</div>
+        <div class="meta-value">2025 BMW iX3</div>
+        <div class="meta-sub">純電動 SUV · 全車玻璃連全景天窗</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">車身顏色/狀態 Colour</div>
+        <div class="meta-value">黑藍色 · 一手原廠玻璃</div>
+        <div class="meta-sub">車齡約 1 年 · 尚餘約 5 年免驗車期</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-label">用車習慣/環境 Usage</div>
+        <div class="meta-value">室外泊車 · 偶爾戴眼鏡駕駛</div>
+        <div class="meta-sub">重視抗水漬、夜間低眩光及驗車透光標準</div>
+      </div>
+    </section>
+
+    <!-- 01 · Analysis -->
+    <section id="analysis">
+      <div class="section-header">
+        <span class="section-code">01 · Analysis</span>
+        <h2 class="section-title">客戶用車環境與隱性痛點深度剖析</h2>
+        <p class="section-desc">根據您的 BMW iX3 車型特點、泊車習慣及駕駛視力需求，精準匹配專屬技術對策。</p>
+      </div>
+
+      <div class="analysis-grid">
+        <!-- Left: Pain Points -->
+        <div class="analysis-card">
+          <div class="card-badge-header">
+            <div class="badge-icon">!</div>
+            <h3>客戶環境與潛在痛點</h3>
+          </div>
+          <ul class="point-list">
+            <li class="point-item">
+              <div class="point-title">室外泊車水漬與雨水水垢</div>
+              <p class="point-text">黑藍色車身吸熱較快，且日常以室外停泊為主（即使有 Cover 遮蓋，行車遇雨或早晚露水仍會令水珠殘留玻璃）。雨水水珠經日照蒸發後容易形成白色水垢印，影響外觀及通透度。</p>
+            </li>
+            <li class="point-item">
+              <div class="point-title">戴眼鏡駕駛「彩虹紋」與夜間散光</div>
+              <p class="point-text">您有偶爾佩戴眼鏡駕駛的習慣。若錯用傳統含金屬鍍層的隔熱膜，光線穿過鏡片與金屬層會產生偏光彩虹紋，夜間對頭車燈照射時更會出現「重影眩光」，增加眼部疲勞。</p>
+            </li>
+            <li class="point-item">
+              <div class="point-title">SUV 大面積玻璃與全景天窗暴曬</div>
+              <p class="point-text">iX3 擁有寬闊車窗及大型全景玻璃天窗，香港夏季猛烈日照直接傾瀉而下，令車廂迅速升溫、頭頂灼熱，同時大幅增加冷氣耗電負荷。</p>
+            </li>
+            <li class="point-item">
+              <div class="point-title">5 年後強制驗車免撕膜需求</div>
+              <p class="point-text">車輛為 2025 年一手新車，日後需接受香港運輸署驗車。若透光率不符標準，屆時需要撕膜重貼。</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Professional Solutions -->
+        <div class="analysis-card solution-side">
+          <div class="card-badge-header">
+            <div class="badge-icon">✓</div>
+            <h3>我哋嘅專業處置與對策</h3>
+          </div>
+          <ul class="point-list">
+            <li class="point-item">
+              <div class="point-title">疏水抗污塗層 + 深層玻璃油膜淨化</div>
+              <p class="point-text">施工前先為全車玻璃進行深層油膜與水垢淨化處理，再裝貼具備疏水塗層的膜料，令雨水較易滑落，減少水漬殘留，日常沖洗較輕鬆。</p>
+            </li>
+            <li class="point-item">
+              <div class="point-title">非金屬光學／納米陶瓷技術</div>
+              <p class="point-text">選用不含金屬成份的膜料，低內反光，減少眼鏡偏光彩虹紋與夜間眩光，同時不阻擋手機及車載 GPS 訊號。</p>
+            </li>
+            <li class="point-item">
+              <div class="point-title">紅外線阻隔，保護天窗</div>
+              <p class="point-text">針對前擋及全景天窗重點強化紅外線阻隔效能，有效降低車廂體感溫度，並阻隔紫外線保護內飾。</p>
+            </li>
+            <li class="point-item">
+              <div class="point-title">分區透光率搭配</div>
+              <p class="point-text">前擋及前座兩側窗按 70% 以上透光率標準配置，配搭後排及天窗強化隔熱型號，配合日後驗車要求。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="gold-line"></div>
+
+    <!-- 02 · Solutions -->
+    <section id="solutions">
+      <div class="section-header">
+        <span class="section-code">02 · Solutions</span>
+        <h2 class="section-title">雙重專屬技術方案剖析</h2>
+        <p class="section-desc">兩款方案均採用 3M 膜料，不含金屬成份、不阻擋電子訊號，前排按香港驗車透光標準配置。</p>
+      </div>
+
+      <div class="solutions-wrapper">
+        <div class="sol-box">
+          <div class="circle-letter">A</div>
+          <div class="sol-content">
+            <h4>旗艦光學保護方案（首席顧問推薦）</h4>
+            <span class="sol-spec">3M Crystalline 光學多層隔熱膜（CR70/90 + CR40/20）</span>
+            <p>
+              採用 3M 多層光學薄膜，具備<strong>疏水抗水漬塗層</strong>與<strong>低內反光</strong>。即使在淺色高透光狀態下仍能有效阻隔<strong>紅外線熱能</strong>，戴眼鏡日夜駕駛視野清晰，適合室外泊車與全景天窗車型。
+            </p>
+          </div>
+        </div>
+
+        <div class="sol-box">
+          <div class="circle-letter">B</div>
+          <div class="sol-content">
+            <h4>實用高性價比方案</h4>
+            <span class="sol-spec">3M Ceramic IR 納米陶瓷隔熱膜（IR70 + IR25/15）</span>
+            <p>
+              採用納米陶瓷隔熱技術，同樣不含金屬鍍層，減少眼鏡彩虹紋及夜間眩光。前排採用 <strong>IR70 高透光型號</strong>，配合日後驗車要求，後排及全景天窗則搭配深色陶瓷膜強化私隱與隔熱，與黑藍色車身相襯，性價比高。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gold-line"></div>
+
+    <!-- 03 · Quotation -->
+    <section id="quotation">
+      <div class="section-header">
+        <span class="section-code">03 · Quotation</span>
+        <h2 class="section-title">尊榮分級報價方案（全車連全景天窗）</h2>
+        <p class="section-desc">報價已包含全車玻璃油膜水垢清潔、專業施工及原廠質保登記。</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan A (Featured) -->
+        <div class="price-card featured">
+          <div class="recommended-badge">首席顧問推薦 · 旗艦首選</div>
+          <div>
+            <div class="plan-tier">Plan A · Flagship Optical</div>
+            <h3 class="plan-name">旗艦光學保護方案</h3>
+            <div class="plan-material">
+              3M Crystalline 光學系列（全車玻璃連全景天窗）
+            </div>
+
+            <div class="price-box">
+              <div class="price-amount"><small>HK$</small>3,999</div>
+              <div class="price-note">全車連全景天窗完工價</div>
+            </div>
+
+            <ul class="feature-list">
+              <li><span class="check-gold">✦</span><span><strong>施工部位：</strong>前擋風玻璃 + 四門側窗 + 尾三角窗 + 尾擋 + 全景玻璃天窗</span></li>
+              <li><span class="check-gold">✦</span><span><strong>光學低眩光：</strong>非金屬多層光學膜，低內反光，戴眼鏡日夜駕駛減少重影</span></li>
+              <li><span class="check-gold">✦</span><span><strong>疏水抗水漬：</strong>疏水抗污面層，減少室外泊車雨後水漬殘留</span></li>
+              <li><span class="check-gold">✦</span><span><strong>阻熱防曬：</strong>有效阻隔紅外線及紫外線，減輕天窗暴曬熱感</span></li>
+              <li><span class="check-gold">✦</span><span><strong>驗車透光標準：</strong>前排選用 CR70/CR90 高透規格，配合日後驗車</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="warranty-box">
+              <strong>原廠 7 年質保</strong>
+              涵蓋防起泡、防脫膠、防變色。
+            </div>
+            <a class="cta-btn" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84%20BMW%20iX3%20%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88%20A%EF%BC%88HK%243%2C999%EF%BC%89" target="_blank" rel="noopener">WhatsApp 預約方案 A</a>
+          </div>
+        </div>
+
+        <!-- Plan B -->
+        <div class="price-card">
+          <div>
+            <div class="plan-tier">Plan B · Smart Ceramic</div>
+            <h3 class="plan-name">實用高性價比方案</h3>
+            <div class="plan-material">
+              3M Ceramic IR 納米陶瓷系列（全車玻璃連全景天窗）
+            </div>
+
+            <div class="price-box">
+              <div class="price-amount"><small>HK$</small>3,499</div>
+              <div class="price-note">全車連全景天窗完工價</div>
+            </div>
+
+            <ul class="feature-list">
+              <li><span class="check-gold">✦</span><span><strong>施工部位：</strong>前擋風玻璃 + 四門側窗 + 尾三角窗 + 尾擋 + 全景玻璃天窗</span></li>
+              <li><span class="check-gold">✦</span><span><strong>陶瓷不擋訊號：</strong>不含金屬成份，減少偏光彩虹紋，不阻擋手機及 GPS 訊號</span></li>
+              <li><span class="check-gold">✦</span><span><strong>阻熱表現：</strong>有效阻隔紅外線及 99% 以上紫外線，減輕冷氣負荷</span></li>
+              <li><span class="check-gold">✦</span><span><strong>分區私隱搭配：</strong>前排 IR70 高透光，後排及天窗深色型號襯托黑藍車身</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="warranty-box">
+              <strong>5 年品質保障</strong>
+              涵蓋防起泡、防脫膠及正常使用下之耐候品質。
+            </div>
+            <a class="cta-btn standard-btn" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84%20BMW%20iX3%20%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88%20B%EF%BC%88HK%243%2C499%EF%BC%89" target="_blank" rel="noopener">WhatsApp 預約方案 B</a>
+          </div>
+        </div>
+      </div>
+</section>
+
+    <!-- Exclusive Privilege -->
+    <section class="privilege-section" aria-label="尊榮專屬禮遇">
+      <div class="privilege-header">
+        <span class="privilege-tag">EXCLUSIVE PRIVILEGE</span>
+        <h3 class="privilege-title">尊榮車主專屬禮遇 · 100% 現金積分回贈</h3>
+      </div>
+      <div class="privilege-grid">
+        <p class="privilege-desc">
+          凡選用以上任何一款全車隔熱膜方案，即可享 <strong>100% 等值現金積分回贈</strong>（<strong>1 積分 = HK$1 現金</strong>）。積分永久保留，可直接於日後抵扣多項養車開支，真正做到一次貼膜、雙重回報：
+        </p>
+        <div class="rebate-perks">
+          <div class="perk-pill">✦ 代辦政府續牌費</div>
+          <div class="perk-pill">✦ 汽車保險續保折扣</div>
+          <div class="perk-pill">✦ 專業洗車及深層美容</div>
+          <div class="perk-pill">✦ 日常維修及保養抵扣</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-quote">「守護每一程清晰視野，讓您的 BMW iX3 應對烈日與風雨。」</p>
+      <p class="advisor-sign">ALL IN ONE 首席汽車美容及貼膜顧問 敬呈</p>
+      <p class="footer-meta">專屬為 Crystal 嘅 BMW iX3 準備 · WhatsApp 預約：<a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20BMW%20iX3%20%E5%85%A8%E8%BB%8A%E9%80%A3%E5%A4%A9%E7%AA%97%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="color: var(--gold-light); text-decoration: none;">9588 5226</a></p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
