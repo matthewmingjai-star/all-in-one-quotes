@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BYD Atto 3 隔熱膜方案 ｜ ALL IN ONE 首席顧問報價</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-primary: #0a0908;
+      --bg-card: #131110;
+      --bg-secondary: #1c1917;
+      --gold-main: #c9a45c;
+      --gold-bright: #dfbe7a;
+      --gold-border: rgba(201, 164, 92, 0.25);
+      --gold-border-strong: rgba(201, 164, 92, 0.65);
+      --gold-glow: rgba(201, 164, 92, 0.16);
+      --text-title: #f5f5f5;
+      --text-body: #d1d5db;
+      --text-muted: #9ca3af;
+      --radius-lg: 18px;
+      --radius-md: 12px;
+      --transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      background-image:
+        radial-gradient(circle at 18% 8%, rgba(201, 164, 92, 0.12), transparent 38%),
+        radial-gradient(circle at 85% 28%, rgba(223, 190, 122, 0.06), transparent 42%),
+        radial-gradient(circle at 50% 92%, rgba(201, 164, 92, 0.08), transparent 45%);
+      color: var(--text-body);
+      font-family: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: 'Noto Serif TC', 'Playfair Display', 'Cinzel', serif;
+      color: var(--text-title);
+      letter-spacing: 0.04em;
+    }
+
+    .en-accent {
+      font-family: 'Cinzel', 'Playfair Display', serif;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+
+    /* Subtle Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.75s ease, transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Top Brand Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(10, 9, 8, 0.78);
+      border-bottom: 1px solid var(--gold-border);
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 22px;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .brand-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-emblem {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--gold-main);
+      display: grid;
+      place-items: center;
+      font-family: 'Cinzel', serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold-bright);
+      background: linear-gradient(145deg, rgba(201, 164, 92, 0.22), rgba(19, 17, 16, 0.9));
+      box-shadow: 0 0 16px rgba(201, 164, 92, 0.2);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+
+    .brand-name {
+      font-family: 'Cinzel', serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--gold-bright);
+      letter-spacing: 0.2em;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+    }
+
+    .doc-ref {
+      font-size: 12px;
+      color: var(--gold-main);
+      border: 1px solid var(--gold-border);
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(201, 164, 92, 0.06);
+      letter-spacing: 0.08em;
+    }
+
+    /* 1. Hero Section */
+    .hero {
+      position: relative;
+      padding: 84px 0 64px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(201, 164, 92, 0.08) 0%, rgba(10, 9, 8, 0) 60%),
+        repeating-linear-gradient(
+          90deg,
+          rgba(201, 164, 92, 0.025) 0px,
+          rgba(201, 164, 92, 0.025) 1px,
+          transparent 1px,
+          transparent 90px
+        );
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--gold-bright);
+      padding: 7px 18px;
+      border: 1px solid var(--gold-border);
+      border-radius: 999px;
+      background: rgba(19, 17, 16, 0.7);
+      backdrop-filter: blur(8px);
+      margin-bottom: 24px;
+    }
+
+    .hero-eyebrow::before,
+    .hero-eyebrow::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold-main);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5.2vw, 48px);
+      font-weight: 700;
+      line-height: 1.28;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, #ffffff 15%, var(--gold-bright) 58%, var(--gold-main) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--text-body);
+      max-width: 660px;
+      margin: 0 auto 28px;
+      font-weight: 300;
+    }
+
+    .hero-client-pill {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      padding: 12px 24px;
+      border-radius: var(--radius-md);
+      background: rgba(28, 25, 23, 0.72);
+      border: 1px solid var(--gold-border);
+      font-size: 14px;
+      color: var(--text-title);
+    }
+
+    .hero-client-pill span {
+      color: var(--gold-bright);
+      font-weight: 500;
+    }
+
+    .hero-divider {
+      width: 96px;
+      height: 1px;
+      margin: 34px auto 0;
+      background: linear-gradient(90deg, transparent, var(--gold-main), transparent);
+    }
+
+    /* 2. Meta Bar */
+    .meta-bar {
+      margin: 12px 0 68px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .meta-card {
+      background: linear-gradient(160deg, rgba(28, 25, 23, 0.85), rgba(19, 17, 16, 0.95));
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .meta-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold-main), transparent);
+      opacity: 0.7;
+    }
+
+    .meta-card:hover {
+      border-color: var(--gold-border-strong);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .meta-label {
+      font-size: 11px;
+      color: var(--gold-main);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .meta-value {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 19px;
+      font-weight: 600;
+      color: var(--text-title);
+      margin-bottom: 6px;
+    }
+
+    .meta-note {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* Section Header */
+    section {
+      padding: 36px 0 60px;
+    }
+
+    .section-head {
+      margin-bottom: 34px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--gold-main);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-size: clamp(24px, 3.6vw, 34px);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 680px;
+    }
+
+    /* 3. 01 Analysis Dual Column */
+    .analysis-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .analysis-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 30px 28px;
+      position: relative;
+      backdrop-filter: blur(10px);
+    }
+
+    .analysis-panel.solution-side {
+      background: linear-gradient(165deg, rgba(28, 25, 23, 0.92), rgba(19, 17, 16, 0.98));
+      border-color: rgba(201, 164, 92, 0.42);
+      box-shadow: 0 0 36px rgba(201, 164, 92, 0.06);
+    }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid var(--gold-border);
+    }
+
+    .panel-header h3 {
+      font-size: 20px;
+      color: var(--text-title);
+    }
+
+    .panel-badge {
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--gold-border);
+      color: var(--gold-bright);
+      background: rgba(201, 164, 92, 0.08);
+    }
+
+    .analysis-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .analysis-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .item-dot {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: 1px solid var(--gold-main);
+      color: var(--gold-bright);
+      font-size: 12px;
+      font-weight: 600;
+      display: grid;
+      place-items: center;
+      margin-top: 3px;
+      background: rgba(201, 164, 92, 0.1);
+    }
+
+    .item-content h4 {
+      font-size: 16px;
+      color: var(--text-title);
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .item-content p {
+      font-size: 14px;
+      color: var(--text-body);
+    }
+
+    .item-content .highlight {
+      color: var(--gold-bright);
+      font-weight: 500;
+    }
+
+    /* 4. 02 Solutions (A / B Circular Badges) */
+    .solutions-stack {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .solution-box {
+      background: linear-gradient(155deg, var(--bg-secondary), var(--bg-card));
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 30px 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: var(--transition);
+    }
+
+    .solution-box:hover {
+      border-color: var(--gold-border-strong);
+      transform: translateY(-4px);
+    }
+
+    .circle-letter {
+      flex-shrink: 0;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 1.5px solid var(--gold-main);
+      background: radial-gradient(circle at 30% 30%, rgba(223, 190, 122, 0.28), rgba(19, 17, 16, 0.95));
+      display: grid;
+      place-items: center;
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gold-bright);
+      box-shadow: 0 0 22px rgba(201, 164, 92, 0.22);
+    }
+
+    .solution-body h3 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .solution-sub {
+      font-size: 13px;
+      color: var(--gold-main);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .solution-body p {
+      font-size: 14px;
+      color: var(--text-body);
+      margin-bottom: 14px;
+    }
+
+    .spec-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .spec-pill {
+      font-size: 12px;
+      color: var(--gold-bright);
+      background: rgba(201, 164, 92, 0.1);
+      border: 1px solid var(--gold-border);
+      padding: 4px 11px;
+      border-radius: 999px;
+    }
+
+    /* 5. 03 Quotation Cards */
+    .scope-banner {
+      background: rgba(28, 25, 23, 0.85);
+      border: 1px solid var(--gold-border);
+      border-left: 3px solid var(--gold-main);
+      border-radius: var(--radius-md);
+      padding: 16px 22px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .scope-banner strong {
+      color: var(--gold-bright);
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .quote-card {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px 32px;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+    }
+
+    .quote-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .quote-card.featured {
+      background: linear-gradient(165deg, #1b1712 0%, #131110 55%, #17130f 100%);
+      border: 1.5px solid var(--gold-main);
+      box-shadow:
+        0 0 42px rgba(201, 164, 92, 0.2),
+        inset 0 0 28px rgba(201, 164, 92, 0.06);
+    }
+
+    .featured-badge {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(90deg, var(--gold-main), var(--gold-bright), var(--gold-main));
+      color: #0a0908;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      padding: 6px 20px;
+      border-radius: 999px;
+      white-space: nowrap;
+      box-shadow: 0 6px 20px rgba(201, 164, 92, 0.42);
+    }
+
+    .plan-label {
+      font-size: 12px;
+      color: var(--gold-main);
+      margin-bottom: 6px;
+    }
+
+    .plan-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .plan-series {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+    }
+
+    .price-block {
+      padding: 20px 0;
+      border-top: 1px solid var(--gold-border);
+      border-bottom: 1px solid var(--gold-border);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .price-amount {
+      font-family: 'Cinzel', 'Noto Serif TC', serif;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--gold-bright);
+      line-height: 1;
+    }
+
+    .price-currency {
+      font-size: 16px;
+      color: var(--gold-main);
+      margin-right: 4px;
+      font-weight: 600;
+    }
+
+    .price-tag-note {
+      font-size: 12px;
+      color: var(--gold-bright);
+      background: rgba(201, 164, 92, 0.14);
+      border: 1px solid rgba(201, 164, 92, 0.35);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      margin-bottom: 26px;
+      flex-grow: 1;
+    }
+
+    .feature-list li {
+      display: flex;
+      gap: 11px;
+      font-size: 14px;
+      color: var(--text-body);
+      align-items: flex-start;
+    }
+
+    .check-icon {
+      flex-shrink: 0;
+      color: var(--gold-bright);
+      font-weight: 700;
+      margin-top: 1px;
+    }
+
+    .warranty-box {
+      background: rgba(201, 164, 92, 0.08);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 13px 16px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: var(--text-title);
+    }
+
+    .warranty-box span {
+      color: var(--gold-bright);
+      font-weight: 600;
+    }
+
+    .select-btn {
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: var(--radius-md);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid var(--gold-main);
+      background: transparent;
+      color: var(--gold-bright);
+    }
+
+    .select-btn:hover {
+      background: rgba(201, 164, 92, 0.14);
+    }
+
+    .quote-card.featured .select-btn {
+      background: linear-gradient(90deg, var(--gold-main), var(--gold-bright));
+      color: #0a0908;
+      border: none;
+      box-shadow: 0 8px 24px rgba(201, 164, 92, 0.32);
+    }
+
+    .quote-card.featured .select-btn:hover {
+      filter: brightness(1.08);
+      transform: translateY(-1px);
+    }
+
+    .quote-card.selected {
+      box-shadow: 0 0 0 2px var(--gold-bright), 0 0 46px rgba(201, 164, 92, 0.32);
+    }
+
+    .terms-box {
+      margin-top: 26px;
+      background: rgba(19, 17, 16, 0.9);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .terms-box h4 {
+      color: var(--gold-main);
+      font-size: 13px;
+      margin-bottom: 8px;
+      letter-spacing: 0.06em;
+    }
+
+    .terms-box ul {
+      padding-left: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    /* 6. Exclusive Privilege */
+    .privilege-card {
+      background: linear-gradient(135deg, rgba(201, 164, 92, 0.16) 0%, rgba(19, 17, 16, 0.96) 52%, rgba(28, 25, 23, 0.98) 100%);
+      border: 1.5px solid var(--gold-main);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55), 0 0 36px rgba(201, 164, 92, 0.12);
+    }
+
+    .privilege-card::before {
+      content: "100%";
+      position: absolute;
+      right: 24px;
+      top: -12px;
+      font-family: 'Cinzel', serif;
+      font-size: 130px;
+      font-weight: 700;
+      color: rgba(201, 164, 92, 0.07);
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    .privilege-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.35fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .privilege-tag {
+      display: inline-block;
+      font-size: 11px;
+      color: #0a0908;
+      background: var(--gold-bright);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .privilege-card h2 {
+      font-size: clamp(24px, 3.4vw, 32px);
+      margin-bottom: 12px;
+    }
+
+    .privilege-card p {
+      font-size: 15px;
+      color: var(--text-body);
+    }
+
+    .rebate-showcase {
+      background: rgba(10, 9, 8, 0.72);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      padding: 22px 24px;
+      backdrop-filter: blur(8px);
+    }
+
+    .rebate-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(201, 164, 92, 0.15);
+      font-size: 14px;
+    }
+
+    .rebate-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .rebate-val {
+      font-family: 'Cinzel', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gold-bright);
+    }
+
+    .rebate-uses {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .use-chip {
+      font-size: 12px;
+      color: var(--text-title);
+      background: rgba(201, 164, 92, 0.12);
+      border: 1px solid var(--gold-border);
+      padding: 5px 12px;
+      border-radius: 999px;
+    }
+
+    /* Interactive Confirmation Bar */
+    .confirm-drawer {
+      margin-top: 28px;
+      background: linear-gradient(90deg, rgba(28, 25, 23, 0.95), rgba(19, 17, 16, 0.98));
+      border: 1px solid var(--gold-main);
+      border-radius: var(--radius-md);
+      padding: 20px 26px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .confirm-info {
+      font-size: 14px;
+    }
+
+    .confirm-info strong {
+      color: var(--gold-bright);
+      font-size: 16px;
+    }
+
+    .confirm-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      background: linear-gradient(90deg, var(--gold-main), var(--gold-bright));
+      color: #0a0908;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .wa-btn:hover {
+      filter: brightness(1.08);
+      transform: translateY(-2px);
+    }
+
+    .copy-btn {
+      background: transparent;
+      border: 1px solid var(--gold-border-strong);
+      color: var(--gold-bright);
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .copy-btn:hover {
+      background: rgba(201, 164, 92, 0.12);
+    }
+
+    /* 7. Footer */
+    footer {
+      margin-top: 40px;
+      border-top: 1px solid var(--gold-border);
+      background: linear-gradient(180deg, rgba(19, 17, 16, 0.4), #070605);
+      padding: 56px 0 64px;
+      text-align: center;
+    }
+
+    .closing-quote {
+      font-family: 'Noto Serif TC', serif;
+      font-size: clamp(18px, 2.6vw, 23px);
+      color: var(--text-title);
+      max-width: 700px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+    }
+
+    .closing-quote span {
+      color: var(--gold-bright);
+    }
+
+    .advisor-card {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 22px 38px;
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-md);
+      background: rgba(19, 17, 16, 0.85);
+      margin-bottom: 24px;
+    }
+
+    .advisor-role {
+      font-size: 11px;
+      color: var(--gold-main);
+    }
+
+    .advisor-name {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 20px;
+      color: var(--text-title);
+      font-weight: 600;
+    }
+
+    .advisor-contact {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .advisor-contact a {
+      color: var(--gold-bright);
+      text-decoration: none;
+    }
+
+    .copyright {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.08em;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 26px;
+      left: 50%;
+      transform: translateX(-50%) translateY(90px);
+      background: #1c1917;
+      border: 1px solid var(--gold-main);
+      color: var(--gold-bright);
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
+      opacity: 0;
+      transition: all 0.35s ease;
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .meta-grid,
+      .analysis-grid,
+      .solutions-stack,
+      .quote-grid,
+      .privilege-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 62px 0 44px;
+      }
+
+      .privilege-card {
+        padding: 30px 22px;
+      }
+
+      .doc-ref {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Top Brand Bar -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div class="brand-mark">
+        <div class="brand-emblem">A1</div>
+        <div class="brand-text">
+          <span class="brand-name">ALL IN ONE</span>
+          <span class="brand-sub">汽車美容 · 隔熱膜 · 首席顧問</span>
+        </div>
+      </div>
+      <div class="doc-ref en-accent">ALL IN ONE · 2026</div>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section -->
+  <section class="hero">
+    <div class="container hero-inner reveal">
+      <div class="hero-eyebrow en-accent">All In One ｜ 隔熱膜方案</div>
+      <h1>BYD Atto 3 隔熱膜報價方案</h1>
+      <p class="hero-subtitle">
+        針對純電動車露天暴曬蓄熱、戴眼鏡夜間抗眩光視野及香港運輸署驗車法規，為您的愛車量身訂製全車光學隔熱方案。
+      </p>
+      <div class="hero-client-pill">
+        <div>座駕：<span>2024 BYD Atto 3（黑色）</span></div>
+      </div>
+      <div class="hero-divider"></div>
+    </div>
+  </section>
+
+  <div class="container reveal" style="margin-top:28px"><img src="images/byd-atto-3-2024-black-3m-window-tint.jpg" alt="BYD Atto 3 示意圖" style="width:100%;border-radius:16px;display:block;"></div>
+
+  <!-- 2. Meta Bar -->
+  <div class="meta-bar">
+    <div class="container">
+      <div class="meta-grid reveal">
+        <div class="meta-card">
+          <span class="meta-label en-accent">Model · 車型規格</span>
+          <div class="meta-value">2024 BYD Atto 3</div>
+          <div class="meta-note">純電動 SUV｜大面積前擋</div>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label en-accent">Colour · 車身狀態</span>
+          <div class="meta-value">黑色車身</div>
+          <div class="meta-note">黑色車身吸熱快，加強玻璃阻熱可減輕冷氣負擔</div>
+        </div>
+        <div class="meta-card">
+          <span class="meta-label en-accent">Usage · 用車環境</span>
+          <div class="meta-value">露天泊車 · 眼鏡駕駛</div>
+          <div class="meta-note">追求實質車廂降溫、夜間不眩光、合乎驗車標準</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. 01 Analysis -->
+  <section id="analysis">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag en-accent">01 · Analysis</span>
+        <h2 class="section-title">你嘅用車環境與擔心位</h2>
+        <p class="section-desc">
+          隔熱膜並非愈深色愈涼快。我們結合您「黑色純電車、泊露天、戴眼鏡揸車、驗車唔使煩」四大真實場景，逐一拆解潛在隱患與對應工程標準。
+        </p>
+      </div>
+
+      <div class="analysis-grid reveal">
+        <!-- Left: Pain Points -->
+        <div class="analysis-panel">
+          <div class="panel-header">
+            <h3>你最擔心嘅位</h3>
+            <span class="panel-badge">YOUR CONCERNS</span>
+          </div>
+          <ul class="analysis-list">
+            <li class="analysis-item">
+              <div class="item-dot">01</div>
+              <div class="item-content">
+                <h4>黑色純電車泊露天，車廂蓄熱</h4>
+                <p>黑色車身加上長期日曬，中午車廂溫度會明顯升高；BYD Atto 3 前擋風玻璃為最大入熱口，冷氣長開全速降溫既悶熱又損耗電車續航。</p>
+              </div>
+            </li>
+            <li class="analysis-item">
+              <div class="item-dot">02</div>
+              <div class="item-content">
+                <h4>戴眼鏡夜間駕駛，容易出現散光眩光</h4>
+                <p>若誤選含金屬鍍層或內反光過高的隔熱膜，夜間經前擋直視對頭車大燈及路燈時，容易產生「起網感」、重影或彩虹紋，影響視線同容易眼累。</p>
+              </div>
+            </li>
+            <li class="analysis-item">
+              <div class="item-dot">03</div>
+              <div class="item-content">
+                <h4>長遠持有，擔心日後驗車</h4>
+                <p>若前擋或前座側窗透光度不達標，日後驗車時可能要重新處理，費時失事。</p>
+              </div>
+            </li>
+            <li class="analysis-item">
+              <div class="item-dot">04</div>
+              <div class="item-content">
+                <h4>室外雨水暴曬，玻璃外側易留水印</h4>
+                <p>露天泊車落雨後經猛烈太陽蒸發，礦物質會於玻璃外側形成水漬與礦物質水垢，雨夜行車時令水撥刮不乾淨並加重眩光。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Professional Solutions -->
+        <div class="analysis-panel solution-side">
+          <div class="panel-header">
+            <h3>我哋嘅專業處置與對策</h3>
+            <span class="panel-badge">ALL IN ONE SOLUTION</span>
+          </div>
+          <ul class="analysis-list">
+            <li class="analysis-item">
+              <div class="item-dot">✓</div>
+              <div class="item-content">
+                <h4>全車覆蓋前擋入熱口＋高紅外線阻隔隔熱</h4>
+                <p>將<span class="highlight">整個前擋風玻璃、4 隻側窗及尾擋</span>一併納入施工，採用高紅外線阻隔隔熱膜，從源頭減少熱能進入，減輕冷氣負擔。</p>
+              </div>
+            </li>
+            <li class="analysis-item">
+              <div class="item-dot">✓</div>
+              <div class="item-content">
+                <h4>非金屬光學結構，低內反光</h4>
+                <p>全線選用<span class="highlight">非金屬光學納米膜或納米陶瓷膜</span>，減少眼鏡折射彩虹紋及夜間散光起網，一般不影響車機 GPS、手機訊號及 eToll 感應。</p>
+              </div>
+            </li>
+            <li class="analysis-item">
+              <div class="item-dot">✓</div>
+              <div class="item-content">
+                <h4>按香港運輸署透光率標準分區搭配</h4>
+                <p><span class="highlight">前擋及前座側窗</span>按運輸署透光率標準選用高透光規格，後座與尾擋兼顧隔熱與舒適度。</p>
+              </div>
+            </li>
+            <li class="analysis-item">
+              <div class="item-dot">✓</div>
+              <div class="item-content">
+                <h4>內外分工專業建議（防誤導）</h4>
+                <p>隔熱膜施工於<span class="highlight">玻璃內側</span>專責阻熱防曬；針對室外玻璃<span class="highlight">外側</span>水印，我們可按需額外加配專業去油膜及撥水鍍膜處理，內外兼顧更清晰。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 02 Solutions -->
+  <section id="solutions">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag en-accent">02 · Solutions</span>
+        <h2 class="section-title">雙重解決方案核心剖析</h2>
+        <p class="section-desc">
+          兩套方案均為 3M 非金屬系列，按戴眼鏡駕駛者及香港驗車標準揀選；差異在於光學結構等級與極端暴曬下的隔熱天花板。
+        </p>
+      </div>
+
+      <div class="solutions-stack reveal">
+        <div class="solution-box">
+          <div class="circle-letter">A</div>
+          <div class="solution-body">
+            <h3>3M Crystalline BLK 系列</h3>
+            <div class="solution-sub">旗艦光學級多層納米膜｜你指定嘅首選</div>
+            <p>
+              採用 3M 多層光學薄膜技術，即使前擋及前窗選用合規高透光級別，仍有良好紅外線阻隔效果，適合黑色車泊露天環境，同時兼顧夜間光學通透度。
+            </p>
+            <div class="spec-pills">
+              <span class="spec-pill">多層光學膜</span>
+              <span class="spec-pill">高紅外線阻隔</span>
+              <span class="spec-pill">低內反光抗眩</span>
+              <span class="spec-pill">非金屬不擋訊號</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-box">
+          <div class="circle-letter">B</div>
+          <div class="solution-body">
+            <h3>3M Ceramic IR 陶瓷系列</h3>
+            <div class="solution-sub">高性價比納米陶瓷膜｜實用合規首選</div>
+            <p>
+              採用納米陶瓷粒子吸收與反射紅外線熱能，全車連前擋施工後可改善車廂暴曬悶熱。同樣為純非金屬無眩光配方，一般不影響眼鏡視野與車機訊號，以更親民預算滿足降溫與合規驗車兩大核心目標。
+            </p>
+            <div class="spec-pills">
+              <span class="spec-pill">納米陶瓷阻熱</span>
+              <span class="spec-pill">合規高透配搭</span>
+              <span class="spec-pill">眼鏡友善低反光</span>
+              <span class="spec-pill">務實高性價比</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 03 Quotation -->
+  <section id="quotation">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag en-accent">03 · Quotation</span>
+        <h2 class="section-title">專屬全車分級報價方案</h2>
+        <p class="section-desc">
+          點擊下方方案即可預選，再 WhatsApp 預約。
+        </p>
+      </div>
+
+      <div class="scope-banner reveal">
+        <div><strong>確認施工範圍：</strong>整個前擋風玻璃 ＋ 4 隻側窗 ＋ 車尾擋風玻璃（共 6 大組玻璃）</div>
+        <div><strong>排除項目：</strong>不含全景天窗（如需加配可另報）</div>
+      </div>
+
+      <div class="quote-grid reveal">
+        <!-- Plan A (Featured) -->
+        <div class="quote-card featured selected" id="card-A">
+          <div class="featured-badge">首席顧問推薦 · 旗艦首選</div>
+          <span class="plan-label en-accent">Plan A · Flagship Optical</span>
+          <h3 class="plan-name">光學旗艦隔熱方案</h3>
+          <div class="plan-series">3M Crystalline BLK 系列（全車包前擋）</div>
+
+          <div class="price-block">
+            <div>
+              <span class="price-currency">HK$</span>
+              <span class="price-amount">3,999</span>
+            </div>
+            <span class="price-tag-note">只加 $500 升級光學旗艦膜</span>
+          </div>
+
+          <ul class="feature-list">
+            <li><span class="check-icon">✦</span><span><strong>全車 6 組玻璃施工</strong>：前擋風玻璃 + 4 隻側窗 + 車尾擋風玻璃（不含天窗）。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>露天暴曬有效隔熱</strong>：多層光學納米結構，高透光依然有效阻隔紅外線熱能，減輕冷氣耗電。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>眼鏡族夜間清晰度</strong>：非金屬、低內反光，減少夜間散光及彩虹紋。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>香港運輸署合規配置</strong>：前擋與前窗按運輸署透光率標準搭配。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>訊號兼容</strong>：一般不影響車機導航、手機訊號及 eToll 感應。</span></li>
+          </ul>
+
+          <div class="warranty-box">
+            <span>原廠質保：</span>3M 原廠質保（防脫膠、起泡及褪色），詳細年期及條款以施工確認為準。
+          </div>
+
+          <button class="select-btn" onclick="selectPlan('A', '方案 A：3M Crystalline BLK 系列', 3999)">
+            已選擇方案 A（HK$3,999）
+          </button>
+        </div>
+
+        <!-- Plan B -->
+        <div class="quote-card" id="card-B">
+          <span class="plan-label en-accent">Plan B · Practical Ceramic</span>
+          <h3 class="plan-name">實用合規高性價比方案</h3>
+          <div class="plan-series">3M Ceramic IR 陶瓷系列（全車包前擋）</div>
+
+          <div class="price-block">
+            <div>
+              <span class="price-currency">HK$</span>
+              <span class="price-amount">3,499</span>
+            </div>
+            <span class="price-tag-note">務實合規首選</span>
+          </div>
+
+          <ul class="feature-list">
+            <li><span class="check-icon">✦</span><span><strong>全車 6 組玻璃施工</strong>：前擋風玻璃 + 4 隻側窗 + 車尾擋風玻璃（不含天窗）。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>全車均衡納米阻熱</strong>：納米陶瓷層阻隔紅外線熱能，覆蓋前擋後車廂體感更涼爽。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>非金屬低反光護眼</strong>：同樣不含金屬成分，兼顧戴眼鏡人士日夜駕駛清晰度。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>合規透光</strong>：前座合規高透、後排兼顧隔熱，長遠安心使用。</span></li>
+            <li><span class="check-icon">✦</span><span><strong>電子設備兼容</strong>：一般不影響 BYD 車機及手機訊號接收。</span></li>
+          </ul>
+
+          <div class="warranty-box">
+            <span>品質保障：</span>防起泡、防脫膠及正常使用褪色保障，詳細年期及條款以施工確認為準。
+          </div>
+
+          <button class="select-btn" onclick="selectPlan('B', '方案 B：3M Ceramic IR 陶瓷系列', 3499)">
+            選擇方案 B（HK$3,499）
+          </button>
+        </div>
+      </div>
+
+      <!-- Transparent Terms -->
+      <div class="terms-box reveal">
+        <h4>透明施工備註與加配說明</h4>
+        <ul>
+          <li>上述報價以原廠白玻璃直接施工計算；如現車玻璃貼有舊膜，<strong>撕除舊膜及除膠工序費用另計</strong>（施工前會先檢視確認）。</li>
+          <li>施工範圍為整個前擋風玻璃 + 4 隻側窗 + 車尾擋風玻璃，<strong>不包括全景天窗</strong>；如需加貼天窗隔熱膜，可提供專屬組合加配價。</li>
+          <li>針對露天泊車玻璃外側雨水水印問題，交車時可按需加配<strong>全車玻璃外側去油膜＋疏水撥水鍍膜</strong>。</li>
+          <li>前擋透光度會按香港運輸署標準配對。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Exclusive Privilege -->
+  <section id="privilege">
+    <div class="container">
+      <div class="privilege-card reveal">
+        <div class="privilege-grid">
+          <div>
+            <span class="privilege-tag en-accent">EXCLUSIVE PRIVILEGE · 專屬禮遇</span>
+            <h2>100% 現金積分回贈</h2>
+            <p>
+              凡確認惠顧以上任何隔熱膜方案，即自動尊享 ALL IN ONE 會員 <strong>100% 現金積分回贈</strong>（<strong>1 分 = HK$1 現金</strong>）。您的每一分消費都會全數轉化為未來養車基金，。
+            </p>
+            <div class="rebate-uses">
+              <span class="use-chip">抵扣續牌費代辦</span>
+              <span class="use-chip">抵扣續汽車保險</span>
+              <span class="use-chip">抵扣洗車美容護理</span>
+              <span class="use-chip">抵扣日後維修保養</span>
+            </div>
+          </div>
+
+          <div class="rebate-showcase">
+            <div class="rebate-row">
+              <span>選用方案 A（HK$3,999）回贈</span>
+              <span class="rebate-val">3,999 分（$3,999）</span>
+            </div>
+            <div class="rebate-row">
+              <span>選用方案 B（HK$3,499）回贈</span>
+              <span class="rebate-val">3,499 分（$3,499）</span>
+            </div>
+            <div class="rebate-row">
+              <span>積分兌換比例</span>
+              <span class="rebate-val">1 分 = HK$1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Confirmation Bar -->
+      <div class="confirm-drawer reveal">
+        <div class="confirm-info">
+          <div>當前預選方案：<strong id="selected-plan-text">方案 A：3M Crystalline BLK 系列（HK$3,999）</strong></div>
+          <div style="color: var(--text-muted); font-size: 13px; margin-top: 2px;">
+            連同 100% 現金積分回贈 <span id="selected-rebate-text" style="color: var(--gold-bright);">3,999 分</span>｜WhatsApp 預約施工檔期
+          </div>
+        </div>
+        <div class="confirm-actions">
+          <a class="wa-btn" id="wa-btn" href="#" target="_blank" rel="noopener">💬 WhatsApp 預約此方案</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer>
+    <div class="container reveal">
+      <p class="closing-quote">
+        「期待為你嘅 <span>2024 BYD Atto 3</span> 打造涼爽、清晰嘅駕駛空間。為 Jacky 準備。」
+      </p>
+
+      <div class="advisor-card">
+        <span class="advisor-role en-accent">CHIEF AUTOMOTIVE CONSULTANT · 首席汽車顧問</span>
+        <div class="advisor-name">Matthew Leung｜ALL IN ONE</div>
+        <div class="advisor-contact">
+          WhatsApp：<a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20BYD%20Atto%203%20%E9%9A%94%E7%86%B1%E8%86%9C%E6%96%B9%E6%A1%88" target="_blank" rel="noopener">9588 5226</a>
+        </div>
+      </div>
+
+      <div class="copyright en-accent">
+        © 2026 ALL IN ONE CONSULTANT LIMITED. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+let currentPlan={code:'A',name:'方案 A：3M Crystalline BLK 系列',price:3999};
+function selectPlan(code,name,price){currentPlan={code,name,price};
+const cA=document.getElementById('card-A'),cB=document.getElementById('card-B');
+const bA=cA.querySelector('.select-btn'),bB=cB.querySelector('.select-btn');
+cA.classList.toggle('selected',code==='A');cB.classList.toggle('selected',code==='B');
+bA.textContent=code==='A'?'已選擇方案 A（HK$3,999）':'選擇方案 A（HK$3,999）';
+bB.textContent=code==='B'?'已選擇方案 B（HK$3,499）':'選擇方案 B（HK$3,499）';
+document.getElementById('selected-plan-text').textContent=`${name}（HK$${price.toLocaleString()}）`;
+document.getElementById('selected-rebate-text').textContent=`${price.toLocaleString()} 分`;
+updateWA();}
+function updateWA(){const m=`你好，我想預約 BYD Atto 3 隔熱膜【${currentPlan.name}】，全車（前擋 + 4 窗 + 尾擋）HK$${currentPlan.price.toLocaleString()}，請問邊日有施工檔期？`;
+document.getElementById('wa-btn').href='https://wa.me/85295885226?text='+encodeURIComponent(m);}
+const observer=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}})},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+updateWA();
+</script>
+</body>
+</html>
