@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VW Golf Mk7 轉色方案 ｜ ALL IN ONE 首席顧問報價</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-main: #0a0908;
+      --bg-card: #131110;
+      --bg-secondary: #1c1917;
+      --gold-primary: #c9a45c;
+      --gold-light: #dfbe7a;
+      --gold-border: rgba(201, 164, 92, 0.25);
+      --gold-border-strong: rgba(201, 164, 92, 0.65);
+      --gold-glow: rgba(201, 164, 92, 0.16);
+      --text-title: #f5f5f5;
+      --text-body: #d1d5db;
+      --text-muted: #9ca3af;
+      --font-serif: 'Noto Serif TC', 'Cinzel', Georgia, serif;
+      --font-en-serif: 'Cinzel', 'Noto Serif TC', serif;
+      --font-sans: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-body);
+      font-family: var(--font-sans);
+      line-height: 1.75;
+      letter-spacing: 0.02em;
+      overflow-x: hidden;
+      background-image:
+        radial-gradient(circle at 15% 10%, rgba(201, 164, 92, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 35%, rgba(201, 164, 92, 0.06) 0%, transparent 45%),
+        radial-gradient(circle at 50% 90%, rgba(201, 164, 92, 0.07) 0%, transparent 50%);
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Subtle Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Top Brand Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(10, 9, 8, 0.82);
+      border-bottom: 1px solid var(--gold-border);
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .brand-logo {
+      font-family: var(--font-en-serif);
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: 0.24em;
+      color: var(--gold-light);
+      text-transform: uppercase;
+    }
+
+    .brand-logo span {
+      color: var(--text-title);
+      font-weight: 400;
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      margin-left: 10px;
+      opacity: 0.8;
+    }
+
+    .quote-ref {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      letter-spacing: 0.1em;
+      border: 1px solid var(--gold-border);
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(28, 25, 23, 0.6);
+    }
+
+    /* 1. Hero Section */
+    .hero {
+      position: relative;
+      padding: 88px 0 64px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 780px;
+      height: 360px;
+      background: radial-gradient(ellipse at center, rgba(201, 164, 92, 0.18), transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-family: var(--font-en-serif);
+      font-size: 0.78rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      border-bottom: 1px solid var(--gold-border);
+      padding-bottom: 8px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.4vw, 3.35rem);
+      font-weight: 600;
+      color: var(--text-title);
+      line-height: 1.28;
+      margin-bottom: 18px;
+      letter-spacing: 0.06em;
+    }
+
+    .hero h1 .gold-gradient {
+      background: linear-gradient(135deg, #f3dca8 0%, #c9a45c 50%, #9b7734 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      max-width: 680px;
+      margin: 0 auto 30px;
+      font-size: 1.02rem;
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+
+    .color-shift-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(19, 17, 16, 0.9);
+      border: 1px solid var(--gold-border);
+      padding: 10px 22px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      color: var(--text-title);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      vertical-align: middle;
+    }
+
+    .swatch-red {
+      background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+    }
+
+    .swatch-matte-blue {
+      background: linear-gradient(135deg, #8da3b5, #5e7488);
+    }
+
+    .shift-arrow {
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+
+    /* 2. Meta Bar */
+    .meta-bar {
+      margin: 8px 0 72px;
+      background: linear-gradient(180deg, rgba(28, 25, 23, 0.85) 0%, rgba(19, 17, 16, 0.95) 100%);
+      border: 1px solid var(--gold-border);
+      border-radius: 16px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+      overflow: hidden;
+    }
+
+    .meta-item {
+      padding: 26px 28px;
+      position: relative;
+    }
+
+    .meta-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 22%;
+      height: 56%;
+      width: 1px;
+      background: linear-gradient(180deg, transparent, var(--gold-border), transparent);
+    }
+
+    .meta-label {
+      font-family: var(--font-en-serif);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .meta-value {
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: var(--text-title);
+      margin-bottom: 4px;
+    }
+
+    .meta-sub {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Header */
+    .section {
+      padding: 40px 0 68px;
+    }
+
+    .section-header {
+      margin-bottom: 36px;
+    }
+
+    .section-tag {
+      font-family: var(--font-en-serif);
+      font-size: 0.82rem;
+      letter-spacing: 0.24em;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-tag::after {
+      content: '';
+      height: 1px;
+      width: 64px;
+      background: linear-gradient(90deg, var(--gold-primary), transparent);
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.55rem, 2.8vw, 2.15rem);
+      font-weight: 600;
+      color: var(--text-title);
+      letter-spacing: 0.04em;
+    }
+
+    .section-desc {
+      margin-top: 10px;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      max-width: 720px;
+    }
+
+    /* 3. 01 · Analysis Dual Column */
+    .analysis-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .analysis-card {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 16px;
+      padding: 32px 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .analysis-card.solution-side {
+      background: linear-gradient(155deg, #171411 0%, #12100e 100%);
+      border-color: rgba(201, 164, 92, 0.38);
+    }
+
+    .analysis-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      color: var(--text-title);
+      margin-bottom: 22px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(201, 164, 92, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .analysis-card-title .pill {
+      font-family: var(--font-sans);
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--gold-border);
+      color: var(--gold-light);
+      background: rgba(201, 164, 92, 0.08);
+    }
+
+    .analysis-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .analysis-list li {
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .analysis-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold-primary);
+      box-shadow: 0 0 10px rgba(201, 164, 92, 0.7);
+    }
+
+    .analysis-list strong {
+      display: block;
+      color: var(--text-title);
+      font-size: 0.98rem;
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+
+    .analysis-list p {
+      font-size: 0.89rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* 4. 02 · Solutions */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .solution-box {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .solution-box:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-border-strong);
+    }
+
+    .letter-badge {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-en-serif);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #0a0908;
+      background: linear-gradient(135deg, #f1d79c 0%, #c9a45c 65%, #9f7c38 100%);
+      box-shadow: 0 0 22px rgba(201, 164, 92, 0.35);
+    }
+
+    .letter-badge.secondary {
+      background: var(--bg-secondary);
+      color: var(--gold-light);
+      border: 1.5px solid var(--gold-primary);
+      box-shadow: none;
+    }
+
+    .solution-content h3 {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-title);
+      margin-bottom: 8px;
+    }
+
+    .solution-content p {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      margin-bottom: 12px;
+    }
+
+    .solution-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .solution-tags span {
+      font-size: 0.76rem;
+      color: var(--gold-light);
+      background: rgba(201, 164, 92, 0.1);
+      border: 1px solid rgba(201, 164, 92, 0.25);
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+
+    /* 5. 03 · Quotation Cards */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .plan-card {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: 20px;
+      padding: 38px 34px 34px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .plan-card.featured {
+      background: linear-gradient(165deg, #1b1712 0%, #131110 55%, #0f0d0b 100%);
+      border: 1.5px solid var(--gold-primary);
+      box-shadow: 0 0 42px var(--gold-glow), 0 24px 60px rgba(0, 0, 0, 0.65);
+    }
+
+    .recommended-badge {
+      position: absolute;
+      top: -15px;
+      right: 28px;
+      background: linear-gradient(135deg, #f3dca8 0%, #c9a45c 60%, #9b7734 100%);
+      color: #0a0908;
+      font-family: var(--font-en-serif);
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      padding: 6px 16px;
+      border-radius: 999px;
+      box-shadow: 0 6px 20px rgba(201, 164, 92, 0.4);
+      text-transform: uppercase;
+    }
+
+    .plan-header {
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(201, 164, 92, 0.2);
+      margin-bottom: 24px;
+    }
+
+    .plan-code {
+      font-family: var(--font-en-serif);
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .plan-name {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--text-title);
+      margin-bottom: 6px;
+    }
+
+    .plan-material {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .plan-price-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .currency {
+      font-family: var(--font-en-serif);
+      font-size: 1rem;
+      color: var(--gold-light);
+      letter-spacing: 0.08em;
+    }
+
+    .price {
+      font-family: var(--font-en-serif);
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: var(--text-title);
+      line-height: 1;
+      letter-spacing: 0.03em;
+    }
+
+    .plan-card.featured .price {
+      background: linear-gradient(135deg, #f6e2b4 0%, #c9a45c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .price-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    .plan-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .plan-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.92rem;
+      color: var(--text-body);
+    }
+
+    .check-icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgba(201, 164, 92, 0.14);
+      border: 1px solid var(--gold-border);
+      color: var(--gold-light);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      margin-top: 3px;
+    }
+
+    .warranty-box {
+      background: rgba(28, 25, 23, 0.8);
+      border: 1px solid rgba(201, 164, 92, 0.22);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 22px;
+      font-size: 0.86rem;
+      color: var(--gold-light);
+    }
+
+    .warranty-box strong {
+      color: var(--text-title);
+      margin-right: 6px;
+    }
+
+    .plan-cta {
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.28s ease;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .plan-cta.primary {
+      background: linear-gradient(135deg, #e5c683 0%, #c9a45c 60%, #a5813d 100%);
+      color: #0a0908;
+      border: none;
+      box-shadow: 0 10px 26px rgba(201, 164, 92, 0.3);
+    }
+
+    .plan-cta.primary:hover {
+      filter: brightness(1.08);
+      transform: translateY(-2px);
+    }
+
+    .plan-cta.secondary {
+      background: transparent;
+      color: var(--gold-light);
+      border: 1px solid var(--gold-primary);
+    }
+
+    .plan-cta.secondary:hover {
+      background: rgba(201, 164, 92, 0.12);
+    }
+
+    /* Notice Strip */
+    .technical-notice {
+      margin-top: 26px;
+      background: rgba(28, 25, 23, 0.65);
+      border-left: 3px solid var(--gold-primary);
+      border-radius: 0 12px 12px 0;
+      padding: 18px 22px;
+      font-size: 0.87rem;
+      color: var(--text-muted);
+    }
+
+    .technical-notice strong {
+      color: var(--gold-light);
+    }
+
+    /* 6. Exclusive Privilege */
+    .privilege-section {
+      padding: 20px 0 72px;
+    }
+
+    .privilege-card {
+      background: linear-gradient(135deg, rgba(28, 23, 17, 0.95) 0%, rgba(15, 13, 11, 0.98) 100%);
+      border: 1px solid var(--gold-primary);
+      border-radius: 20px;
+      padding: 40px 38px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(201, 164, 92, 0.12);
+    }
+
+    .privilege-card::after {
+      content: '100%';
+      position: absolute;
+      right: 28px;
+      bottom: -24px;
+      font-family: var(--font-en-serif);
+      font-size: 7.5rem;
+      font-weight: 700;
+      color: rgba(201, 164, 92, 0.06);
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    .privilege-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .privilege-badge {
+      display: inline-block;
+      font-family: var(--font-en-serif);
+      font-size: 0.75rem;
+      letter-spacing: 0.24em;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .privilege-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.45rem, 2.5vw, 1.95rem);
+      color: var(--text-title);
+      margin-bottom: 14px;
+    }
+
+    .privilege-title span {
+      color: var(--gold-light);
+    }
+
+    .privilege-desc {
+      font-size: 0.94rem;
+      color: var(--text-body);
+    }
+
+    .privilege-perks {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .perk-item {
+      background: rgba(10, 9, 8, 0.65);
+      border: 1px solid var(--gold-border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .perk-item strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+    }
+
+    .perk-item span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* 7. Footer */
+    .footer {
+      border-top: 1px solid var(--gold-border);
+      background: #080706;
+      padding: 56px 0 48px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .footer-message {
+      max-width: 580px;
+    }
+
+    .footer-message h4 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+    }
+
+    .footer-message p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .advisor-sign {
+      text-align: right;
+    }
+
+    .advisor-name {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-title);
+      margin-bottom: 4px;
+    }
+
+    .advisor-role {
+      font-size: 0.82rem;
+      color: var(--gold-primary);
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+
+    .advisor-contact {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .footer-bottom {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(201, 164, 92, 0.12);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: #6b7280;
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%) translateY(90px);
+      background: linear-gradient(135deg, #1f1b16, #131110);
+      color: var(--gold-light);
+      border: 1px solid var(--gold-primary);
+      padding: 14px 24px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      transition: all 0.35s ease;
+      z-index: 100;
+      pointer-events: none;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 860px) {
+      .meta-bar,
+      .analysis-grid,
+      .solutions-grid,
+      .pricing-grid,
+      .privilege-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .meta-item:not(:last-child)::after {
+        display: none;
+      }
+
+      .meta-item:not(:last-child) {
+        border-bottom: 1px solid rgba(201, 164, 92, 0.15);
+      }
+
+      .advisor-sign {
+        text-align: left;
+      }
+
+      .privilege-card {
+        padding: 28px 22px;
+      }
+
+      .plan-card {
+        padding: 32px 24px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #0a0908 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .top-bar {
+        position: static;
+      }
+      .plan-cta {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Brand Navigation -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div class="brand-logo">ALL IN ONE <span>BESPOKE AUTOMOTIVE</span></div>
+      
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 1. Hero Section -->
+    <section class="hero reveal">
+      <span class="hero-eyebrow">All In One ｜ 轉色方案</span>
+      <h1>
+        Volkswagen Golf Mk7 1.4<br />
+        <span class="gold-gradient">全車啞灰藍轉色報價方案</span>
+      </h1>
+      <p class="hero-subtitle">
+        針對露天泊車日曬雨淋、日常高速行車及自助洗車習慣度身訂造，為愛車注入低調細膩的啞灰藍金屬質感，同時兼顧抗污耐候與精細無痕包邊工藝。
+      </p>
+      <div class="color-shift-pill">
+        <span><i class="swatch swatch-red"></i> 原廠紅色</span>
+        <span class="shift-arrow">→</span>
+        <span><i class="swatch swatch-matte-blue"></i> 啞灰藍 Matte Metallic Silver Blue</span>
+      </div>
+    </section>
+
+    <img src="images/vw-golf-mk7-2014-matte-blue-colour-wrap.jpg" alt="Volkswagen Golf Mk7 示意圖" style="width:100%;border-radius:16px;display:block;margin:0 0 28px;">
+    <!-- 2. Meta Bar -->
+    <section class="meta-bar reveal">
+      <div class="meta-item">
+        <span class="meta-label">Model · 車型規格</span>
+        <div class="meta-value">2014 Volkswagen Golf Mk7 1.4</div>
+        <div class="meta-sub">五門揭背車 · 全車轉色施工</div>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Colour · 轉色目標</span>
+        <div class="meta-value">原廠紅色 ➔ 啞灰藍</div>
+        <div class="meta-sub">高反差色系轉換 · 講求高遮蓋力與深層包邊</div>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Usage · 用車環境</span>
+        <div class="meta-value">室外泊車 · 正常高速 · 自己洗車</div>
+        <div class="meta-sub">重點防禦雨水水印、高速彈石及手洗花痕</div>
+      </div>
+    </section>
+
+    <!-- 3. 01 · Analysis -->
+    <section class="section reveal" id="analysis">
+      <div class="section-header">
+        <div class="section-tag">01 · Analysis</div>
+        <h2 class="section-title">客戶用車環境與痛點分析</h2>
+        <p class="section-desc">
+          根據您日常泊車、行車及洗車習慣，加上 2014 年紅車轉淺啞灰藍的施工特性，以下為核心風險與我哋的專屬工藝對策：
+        </p>
+      </div>
+
+      <div class="analysis-grid">
+        <!-- Left: Pain Points -->
+        <div class="analysis-card">
+          <div class="analysis-card-title">
+            <span>客戶環境與潛在痛點</span>
+            <span class="pill">RISK DIAGNOSIS</span>
+          </div>
+          <ul class="analysis-list">
+            <li>
+              <strong>露天泊車暴曬與雨水「食水印」</strong>
+              <p>香港室外日曬雨淋頻繁，雨水蒸發後容易在啞面車膜留下難以清除的水漬印；啞面無法拋光打蠟，普通膜料一旦滲印即難以還原。</p>
+            </li>
+            <li>
+              <strong>自己手洗啞面，容易洗花或「起令」</strong>
+              <p>啞灰藍最講求均勻霧面折射率。自助洗車若夾雜微塵沙粒或誤用含蠟洗車水，表面容易產生亮面花痕，令車身「一撻光、一撻啞」。</p>
+            </li>
+            <li>
+              <strong>「紅轉啞灰藍」高反差，邊位怕露紅底</strong>
+              <p>原車紅色飽和度極高，若門縫、沙板邊及泵把折角僅做平切而無深層包邊，陽光下容易透出紅色原漆邊線，破壞整體視覺質感。</p>
+            </li>
+            <li>
+              <strong>高速行車石仔衝擊與 12 年原漆保護</strong>
+              <p>高速行車時迎風面易受碎石彈花，一旦擊穿薄膜便會露出紅底；此外 12 年車齡漆面需事先檢查附著力，避免施工拉傷原漆。</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Professional Countermeasures -->
+        <div class="analysis-card solution-side">
+          <div class="analysis-card-title">
+            <span>我哋嘅專業處置與對策</span>
+            <span class="pill">ALL IN ONE CRAFT</span>
+          </div>
+          <ul class="analysis-list">
+            <li>
+              <strong>高疏水抗污塗層，封閉表面微孔</strong>
+              <p>選用抗污頂塗層膜料，減少雨水、鳥糞及水漬滲入，延長露天泊車的啞面耐候壽命。</p>
+            </li>
+            <li>
+              <strong>抗刮耐污工藝 ＋ 免費啞面洗車指引</strong>
+              <p>高階方案配備強抗污抗輕微花痕表層，日常只需用清水及中性無蠟洗車水沖洗即可，免打蠟，輕鬆保持均勻霧面光澤。</p>
+            </li>
+            <li>
+              <strong>高遮蓋底層 ＋ 全車深層無痕包邊</strong>
+              <p>採用高遮蓋力改色基材配合 Golf Mk7 專車折角收邊技術，門邊與泵把細位緊密包覆，盡量做到完整包覆並減少翹邊。</p>
+            </li>
+            <li>
+              <strong>施工前免費漆面檢測 ＋ 運輸署改色指引</strong>
+              <p>開工前免費檢測全車原漆狀態並深層去鐵粉除油；完工後提供香港運輸署更改車身顏色登記流程指引。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 02 · Solutions -->
+    <section class="section reveal" id="solutions">
+      <div class="section-header">
+        <div class="section-tag">02 · Solutions</div>
+        <h2 class="section-title">雙重解決方案剖析</h2>
+        <p class="section-desc">
+          為配合 Golf Mk7 的車況與不同預算目標，我們設計了「長效抗污旗艦」與「高性價比視覺翻新」兩套方案，您可按持有年期與打理要求自由選擇：
+        </p>
+      </div>
+
+      <div class="solutions-grid">
+        <div class="solution-box">
+          <div class="letter-badge">A</div>
+          <div class="solution-content">
+            <h3>方案 A｜旗艦抗污耐用防護方案</h3>
+            <p>
+              專為<strong>長期泊室外＋自己洗車</strong>車主而設。升級高階抗污疏水改色保護膜，強化抗水漬、抗紫外線褪色及日常防輕微刮花能力，令啞灰藍質感更持久穩定，減少洗車與打理煩惱。
+            </p>
+            <div class="solution-tags">
+              <span>抗水漬塗層</span>
+              <span>高耐候防褪色</span>
+              <span>深層無痕包邊</span>
+              <span>易洗免打蠟</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-box">
+          <div class="letter-badge secondary">B</div>
+          <div class="solution-content">
+            <h3>方案 B｜高性價比全車轉色方案</h3>
+            <p>
+              最貼合車齡與預算的精明之選。選用高性能鑄造級（Cast）改色膜，主打<strong>紅轉淺色高遮蓋力</strong>與流暢金屬啞面效果，以實惠價錢為愛車換裝，日後局部受損亦可低成本單件重貼。
+            </p>
+            <div class="solution-tags">
+              <span>高性價比首選</span>
+              <span>鑄造級改色膜</span>
+              <span>高遮蓋紅底</span>
+              <span>局部維護彈性高</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 03 · Quotation -->
+    <section class="section reveal" id="quotation">
+      <div class="section-header">
+        <div class="section-tag">03 · Quotation</div>
+        <h2 class="section-title">專屬分級報價方案</h2>
+        <p class="section-desc">
+          價錢以現場確認為準。所有方案均包含全車深層清潔去油、專業無塵車間施工及完工質檢。
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan A (Featured) -->
+        <article class="plan-card featured">
+          <div class="recommended-badge">首席顧問推薦 · 旗艦首選</div>
+          <div>
+            <div class="plan-header">
+              <div class="plan-code">Plan A · Flagship Protection</div>
+              <h3 class="plan-name">旗艦抗污耐用改色方案</h3>
+              <div class="plan-material">物料：抗污疏水改色保護膜（啞灰藍 Matte Metallic Silver Blue）</div>
+              <div class="plan-price-wrap">
+                <span class="currency">HK$</span>
+                <span class="price">11,999</span>
+              </div>
+              <div class="price-note">全車連工包料 · 適合長期室外泊車及注重抗水印與耐用度之車主</div>
+            </div>
+
+            <ul class="plan-features">
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>升級疏水抗水漬頂塗層：</strong>減少室外雨水及水漬滲透，降低啞面「食水印」風險。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>強效抗污耐刮表層：</strong>自己清水手洗更省力，減少微塵洗車花痕，長保均勻啞面折射率。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>紅轉藍高遮蓋＋精細深層包邊：</strong>Golf Mk7 門縫、泵把折角細緻包覆，減少露紅底與邊位翹起。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>全套前置工序：</strong>施工前全車深層洗車、去鐵粉、除油及免費 12 年原漆狀況評估。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>專享 100% 現金積分回贈：</strong>完工即賺 11,999 積分（1 積分 = HK$1，可於未來服務抵扣）。</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="warranty-box">
+              <strong>原廠質保承諾：</strong>提供防脫膠、防起泡及耐候原廠質保，詳細年期及條款以施工確認為準。
+            </div>
+            <a class="plan-cta primary" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84%20Golf%20Mk7%20%E8%BD%89%E8%89%B2%20%E6%96%B9%E6%A1%88%20A%EF%BC%88HK%2411%2C999%EF%BC%89" target="_blank" rel="noopener">預約睇色板 / 選擇方案 A</a>
+          </div>
+        </article>
+
+        <!-- Plan B -->
+        <article class="plan-card">
+          <div>
+            <div class="plan-header">
+              <div class="plan-code">Plan B · Smart Value</div>
+              <h3 class="plan-name">高性價比全車轉色方案</h3>
+              <div class="plan-material">物料：高性能鑄造級改色膜（啞灰藍 Matte Metallic Silver Blue）</div>
+              <div class="plan-price-wrap">
+                <span class="currency">HK$</span>
+                <span class="price">9,999</span>
+              </div>
+              <div class="price-note">全車連工包料 · 最貼合預算與車齡之高質感翻新之選</div>
+            </div>
+
+            <ul class="plan-features">
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>鑄造級（Cast）改色工藝：</strong>延展性佳、延展性佳，流暢呈現啞灰藍冷調金屬質感。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>高遮蓋底層設計：</strong>專為紅轉淺色優化，配合細緻收邊工藝，全車視覺煥然一新。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>日後維護彈性高：</strong>日常清水手洗打理簡單，日後如局部刮花可低成本單件重貼更換。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>全套前置工序：</strong>包含全車深層清潔去油、免費原漆附著力檢查及運輸署改色登記指引。</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span><strong>專享 100% 現金積分回贈：</strong>完工即賺 9,999 積分（1 積分 = HK$1，可於未來服務抵扣）。</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="warranty-box">
+              <strong>品質保障：</strong>提供防脫膠、防起泡之品質保障，詳細年期及條款以施工確認為準。
+            </div>
+            <a class="plan-cta secondary" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84%20Golf%20Mk7%20%E8%BD%89%E8%89%B2%20%E6%96%B9%E6%A1%88%20B%EF%BC%88HK%249%2C999%EF%BC%89" target="_blank" rel="noopener">預約睇色板 / 選擇方案 B</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="technical-notice">
+        <strong>溫馨技術備註：</strong>
+        1. 由於車輛出廠年份為 2014 年（約 12 年車齡），正式施工前師傅會先為您免費檢查全車原漆狀態；如個別位置原漆曾翻噴或已有清漆剝落，會於動工前如實溝通並提供妥善處理建議。<br />
+        2. 改色完成後須按法例向香港運輸署辦理更改車身顏色登記，我哋會免費提供填寫指引。
+      </div>
+    </section>
+
+    <!-- 6. Exclusive Privilege -->
+    <section class="privilege-section reveal">
+      <div class="privilege-card">
+        <div class="privilege-grid">
+          <div>
+            <span class="privilege-badge">Exclusive Privilege · 尊榮專屬禮遇</span>
+            <h2 class="privilege-title">專享 <span>100% 現金積分回贈</span></h2>
+            <p class="privilege-desc">
+              於 ALL IN ONE 消費全數金額均享 <strong>100% 等值現金積分回贈（1 積分 = HK$1 現金）</strong>。貼完車不止即時換上新色，您的每一蚊消費更會轉化為長期養車基金，於未來各項一站式汽車服務中靈活抵扣。
+            </p>
+          </div>
+          <div class="privilege-perks">
+            <div class="perk-item">
+              <strong>續牌費 / 續車保抵扣</strong>
+              <span>配合我們一站式車保報價與續牌代辦，直接扣減開支</span>
+            </div>
+            <div class="perk-item">
+              <strong>精緻洗車與啞面護理</strong>
+              <span>定期專業深層去水漬護理，保持啞灰藍長效如新</span>
+            </div>
+            <div class="perk-item">
+              <strong>日常保養與檢修</strong>
+              <span>適用於日後換油、年審驗車及各項車廂深層消毒</span>
+            </div>
+            <div class="perk-item">
+              <strong>免費實體色板對比</strong>
+              <span>歡迎預約到場在自然光下對比真實啞灰藍色板</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <a class="plan-cta primary reveal" href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Golf%20Mk7%20%E8%BD%89%E8%89%B2%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="display:block;max-width:420px;margin:32px auto 0;">💬 WhatsApp 立即聯絡預約</a>
+  </main>
+
+  <!-- 7. Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-message">
+          <h4>無壓力參考，啱心水隨時聯絡</h4>
+          <p>
+            明白您想先睇清實價再作決定。這份報價單已為您整理好兩種最貼合 2014 Golf Mk7 的轉色方案；如想約時間睇實體啞灰藍色板、了解施工需時，或有任何疑問，隨時 WhatsApp 回覆即可，絕無壓力。
+          </p>
+        </div>
+        <div class="advisor-sign">
+          <div class="advisor-name">Matthew Leung</div>
+          <div class="advisor-role">ALL IN ONE 首席汽車服務顧問</div>
+          <div class="advisor-contact">
+            WhatsApp：<a href="https://wa.me/85295885226?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%20Golf%20Mk7%20%E8%BD%89%E8%89%B2%E6%96%B9%E6%A1%88" target="_blank" rel="noopener" style="color:inherit">9588 5226</a><br />
+            服務範疇：汽車轉色膜 · PPF 車衣 · 隔熱貼 · 鍍膜 · 車保續牌
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 ALL IN ONE Consultant Limited. All Rights Reserved.</span>
+        <span>本報價建議書專為 Volkswagen Golf Mk7 1.4 車主編製，有效期 14 天。</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+document.addEventListener('DOMContentLoaded',()=>{const o=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');o.unobserve(e.target)}})},{threshold:0.1});document.querySelectorAll('.reveal').forEach(x=>o.observe(x))});
+</script>
+</body>
+</html>
